@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>最新消息</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <style>
+        /*商品分類*/
+
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        .jumbotron-bg {
+            background-image: url('https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=1047&q=80');
+            background-size: cover;
+            background-position: center center;
+            min-height: 200px;
+            max-height: 250px;
+            width: 100%;
+        }
+
+        .bg-lighter {
+            background-color: rgba(15, 10, 10, 0.4);
+            width: 100%;
+        }
+
+        .lead {
+            font-size: 17px;
+        }
+
+        /*左側下拉風琴選單*/
+
+        .sidebar {
+            width: 230px;
+            height: auto;
+            background: #faf6f6;
+            position: absolute;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            z-index: 100;
+        }
+
+        .sidebar #leftside-navigation ul,
+        .sidebar #leftside-navigation ul ul {
+            margin: -2px 0 0;
+            padding: 0;
+        }
+
+        .sidebar #leftside-navigation ul li {
+            list-style-type: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .sidebar #leftside-navigation ul li.active>a {
+            color: #6e1abc;
+        }
+
+        .sidebar #leftside-navigation ul li.active ul {
+            display: block;
+        }
+
+        .sidebar #leftside-navigation ul li a {
+            color: #5897e4;
+            text-decoration: none;
+            display: block;
+            padding: 18px 0 18px 25px;
+            font-size: 13px;
+            outline: 0;
+            -webkit-transition: all 200ms ease-in;
+            -moz-transition: all 200ms ease-in;
+            -o-transition: all 200ms ease-in;
+            -ms-transition: all 200ms ease-in;
+            transition: all 200ms ease-in;
+        }
+
+        .sidebar #leftside-navigation ul li a:hover {
+            color: #c415f0;
+        }
+
+        .sidebar #leftside-navigation ul li a span {
+            display: inline-block;
+        }
+
+        .sidebar #leftside-navigation ul li a i {
+            width: 20px;
+        }
+
+        .sidebar #leftside-navigation ul li a i .fa-angle-left,
+        .sidebar #leftside-navigation ul li a i .fa-angle-right {
+            padding-top: 3px;
+        }
+
+        .sidebar #leftside-navigation ul ul {
+            display: none;
+        }
+
+        .sidebar #leftside-navigation ul ul li {
+            background: #f8f3f3;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            border-bottom: none;
+        }
+
+        .sidebar #leftside-navigation ul ul li a {
+            font-size: 13px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            color: #429cd8;
+        }
+
+        /*推薦商品*/
+
+        .Recommendedroducts {
+            height: 50px;
+        }
+
+        /*麵包屑*/
+
+        .breadcrumb>li+li:before {
+            color: rgb(136, 125, 125);
+            content: ">";
+            padding: 0 5px;
+        }
+
+        .breadcrumb {
+            padding-top: 15px;
+            margin-bottom: 0;
+            margin-top: 0px;
+            background-color: transparent;
+            font-size: 14px;
+        }
+
+        /*最新消息*/
+
+        .bg-transparent {
+            background-color: transparent;
+        }
+
+        .card-title-size {
+            font-size: 25px;
+            font-weight: 500;
+            color: #075b92
+        }
+
+        .card-text-size {
+            font-size: 15px;
+            color: #586b77
+        }
+
+        .Certification-size {
+            width: 50px;
+            height: 50px;
+        }
+
+        /*底部資訊列*/
+
+        .title-c {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .connection-a {
+            margin-left: 8px
+        }
+
+        .connection-b {
+            margin-left: 8px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body style="background-color:darkslategray;">
+    <!--上方社群列Icon-->
+    <div class="bg-secondary py-1 text-right">
+        <div class="container">
+            <a href="#" class="text-white mr-2">
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="text-white">
+                <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!--導覽列-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand mr-5 " href="#">
+                <img src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/logo.png?v=1d52dd4f" alt="享曆工業股份有限公司 - 專業生產 | 端子台 | 保險絲座 | 固態繼電器 | 礙子 | 塑膠製品">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse  navbar-collapse-hide  " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            公司介紹
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            產品介紹
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            最新消息
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            常見問題
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            聯絡我們
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--商品分類-->
+    <section>
+        <div class="container">
+            <div class="row text-white">
+                <div class="jumbotron jumbotron-fluid jumbotron-bg">
+                    <div class="container">
+                        <div class="bg-lighter p-2">
+                            <h1 class="display-4">端子台</h1>
+                            <p class="lead" sty>享曆工業股份有限公司 享曆工業是超過35年歷史的專業製造廠，主要產品有電機用端子台、接線座、連接器、保險絲座、熔絲盒、固態繼電器等配電器材。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--中間區塊 -->
+    <section>
+        <div class="container py-3 text-dark bg-light">
+            <!--麵包屑-->
+            <ol class="breadcrumb breadcrumb-a pt-2 mb-1">
+                <li>
+                    <a href=" # "> 首頁 </a>
+                </li>
+                <li class=" active "> 最新消息 </li>
+            </ol>
+
+            <!--左側下拉選單-->
+            <!--正在此頁加上 active-->
+            <div class="row py-2">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="h5">選單</div>
+                    <HR class="mt-0">
+                    <aside class="sidebar">
+                        <div id="leftside-navigation" class="nano">
+                            <ul class="nano-content">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-dashboard"></i>
+                                        <span>首頁</span>
+                                    </a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="javascript:void(0);">
+                                        <i class="fa fa-building"></i>
+                                        <span>公司介紹</span>
+                                        <i class="arrow fa fa-angle-right pull-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">公司簡介</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="javascript:void(0);">
+                                        <i class="fa fa-cogs"></i>
+                                        <span>產品介紹</span>
+                                        <i class="arrow fa fa-angle-right pull-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="sub-menu-a">
+                                            <a href="javascript:void(0);">
+                                                <span>端子台</span>
+                                                <i class="arrow fa fa-angle-right pull-right"></i>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">軌道端子台</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">軌道端子台</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">軌道端子台</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Buttons</a>
+                                        </li>
+                                        <li class="sub-menu-a">
+                                            <a href="javascript:void(0);">
+                                                <span>端子台</span>
+                                                <i class="arrow fa fa-angle-right pull-right"></i>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">軌道端子台</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">軌道端子台</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">軌道端子台</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Modals &amp; Popups</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Icons</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Grid</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tabs &amp; Accordions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Nestable Lists</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="javascript:void(0);">
+                                        <i class="fa fa-table"></i>
+                                        <span>最新消息</span>
+                                        <i class="arrow fa fa-angle-right pull-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Basic Tables</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Data Tables</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="javascript:void(0);">
+                                        <i class="fa fa-question-circle"></i>
+                                        <span>常見問題</span>
+                                        <i class="arrow fa fa-angle-right pull-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Validation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mask</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wizard</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Multiple File Upload</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">WYSIWYG Editor</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="javascript:void(0);">
+                                        <i class="fa fa-envelope"></i>
+                                        <span>關於我們</span>
+                                        <i class="arrow fa fa-angle-right pull-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Inbox</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Compose Mail</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!--推薦商品-->
+                            <HR class="mt-4">
+                            <h3 class="text-center">推薦商品</h3>
+                            <div class="card box-shadow border-0 text-center Recommended-products">
+                                <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">好用端子台</h5>
+                                    <p class="card-text">這很好用哦</p>
+                                </div>
+                                <div class="card-footer border-top-0 bg-white">
+                                    <a href="#" class="btn btn-primary">more</a>
+                                </div>
+                            </div>
+                            <!--服務簡介-->
+                            <HR class="mt-4">
+                            <h4 class="text-center">享曆服務簡介</h4>
+                            <p style="font-size:12px">享曆工業股份有限公司是台灣專業配電器材製造業製造商. 享曆自西元1978年起開始提供專業的端子台、電機端子台、端子台連接器、螺絲端子台、端子盤、接線座、配電端子台、保險絲座、保險絲管夾、固態繼電器、SSR、絕緣礙子、支持礙子、獨立端子、匯流排支持座、纜線夾。...等服務.
+                                擁有超過35年的專業經驗, 享曆總是可以達成客戶各項品質要求.</p>
+                        </div>
+                    </aside>
+                    <script src='js/jquery.min.js'></script>
+                    <script src='js/jquery-ui.min.js'></script>
+                    <script src="js/index.js"></script>
+                </div>
+
+
+
+
+                <!--最新消息-->
+                <div class="col-lg-9 col-md-12">
+                    <div class="mb-2">
+                        <h2 style="color:rgb(0, 4, 235)">最新消息</h2>
+                        <div class="card-body">
+                            <h4 class="card-title-size mt-3">享曆新訊</h4>
+                            <img class="rounded mx-auto d-block img-fluid" src="https://www.terminalsblocks.com/Templates/pic/about-us.jpg" alt="Card image cap">
+                            <div class="mt-4">
+                                <p class="card-text-size">享曆工業股份有限公司成立於1978年，由林錫金先生所創立，為一專業塑膠五金與配電器材製造廠。公司資本額壹仟柒佰萬元整。1992年，鑑於兩岸的經貿發展與業務需求，於大陸廣東省東莞市常平鎮設立新廠。
+                                </p>
+                                <p class="card-text-size">享曆工業是專業的塑膠射出廠，擁有超過35年的經驗，提供客戶產品設計、模具開發、塑膠射出、五金沖壓、機械加工、成品組裝與品檢量測等服務。除了供應自有品牌的各式端子台、保險絲座與固態繼電器等配電器材以外，也接受客戶的OEM/ODM代工生產。目前也接受許多國際知名大廠的代工訂單。
+                                </p>
+                                <p class="card-text-size">主要營業項目為：包括各式接線端子台、歐規端子台、美規端子台、日系端子盤、接線排、保險絲座、保險絲、固態繼電器、電源模組、散熱器與風扇、開關、高低壓礙子、繼電器座、端子盒、接線座、連接器、鋁軌、鐵軌、短路片、固定架及其他各種配件等。我們接受客戶委託之塑膠鋼模設計與製造。其他營業項目則為：窗簾配件、百葉窗零件、機械零件、吊牌槍、噴槍、清潔器、及各式塑膠五金類產品。
+                                </p>
+                            </div>
+                        </div>
+                        <HR class="mt-0">
+                        <div class="card-body">
+                            <h4 class="card-title-size mt-3">人才招募與培訓</h4>
+                            <div class="mt-2">
+                                <p class="card-text-size">享曆工業從事端子台之研發設計、生產製造與銷售服務已經三十多年，為台灣品牌的領導廠商之一。為了成為全球最專業的端子台製造商以及達成公司持續經營123年以上的願景，公司每年均舉辦教育訓練積極培育人才。為了因應公司的持續成長與永續發展，享曆長期招募具有連接器與配電器材專業知識的人才。另外也不定期開放作業員與其他職缺。
+                                </p>
+                            </div>
+                        </div>
+                        <HR class="mt-0">
+                        <div class="card-body">
+                            <h4 class="card-title-size mt-3">經營理念</h4>
+                            <div class="mt-2">
+                                <p class="card-text-size">
+                                    以「品質、服務、誠信、責任」的信念為中心思想。強調以人為本的精神（熱情、關懷）
+                                    <br> 以「服務客戶、共創雙贏」為企業精神
+                                    <br>
+                                </p>
+                                <p class="card-text-size">所有產品都依據國際工業標準的要求來設計與製造 提供客戶最具競爭力的價格與優良品質產品 創造客戶價值，持續獲利，永續經營。
+                                </p>
+                            </div>
+                        </div>
+                        <tr class="mr-3">
+                            <th scope="col">
+                                <a href="#">
+                                    <img src="http://www.shining.com.tw/images/SHINING-tuv-rheinland-certified.png" class="Certification-size" border="0">
+                                </a>
+                            </th>
+                            <th scope="col">
+                                <img src="https://www.terminalsblocks.com/Templates/pic/SHINING-ISO9001-2015.png" class="Certification-size" border="0">
+                            </th>
+                            <th scope="col">
+                                <img src="https://www.terminalsblocks.com/Templates/pic/SHINING-DUNS-REGISTERED.png" class="Certification-size" border="0">
+                            </th>
+                            <th scope="col">
+                                <img src="https://www.terminalsblocks.com/Templates/pic/SHINING-RoHS.png" class="Certification-size" border="0">
+                            </th>
+                            <th scope="col">
+                                <img src="https://www.terminalsblocks.com/Templates/pic/SHINING-c-RU-us-certification.png" class="Certification-size" border="0">
+                            </th>
+                            <th scope="col">
+                                <img src="https://www.terminalsblocks.com/Templates/pic/SHINING-CE.png" class="Certification-size" border="0">
+                            </th>
+                        </tr>
+                        <div class="embed-responsive embed-responsive-16by9 mt-4">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/K8cCdglGxDE" frameborder="0" allow="autoplay; encrypted-media"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+
+
+
+    <!--底部資訊條-->
+
+    <section class="container py-4 bg-dark text-white ">
+        <div class="row">
+            <div class="col-md-4  col-sm-6">
+                <p class="title-c">聯絡資訊</p>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">+886 2226-9431</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">hsichin2@ms37.hinet.net</p>
+                        <p class="connection-a">sales1@shining.com.tw</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">No. 76, Jian-Liou Road, Chung-Ho District, New Taipei City, 23585 Taiwan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3  col-sm-6">
+                <p class="title-c">資訊</p>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">公司介紹</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">產品介紹</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">最新消息</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">常見問題</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">聯絡我們</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <p class="title-c">我們的服務</p>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-map-signs " aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="h5 connection-a">我是誰</p>
+                        <p class="connection-b">我們是享曆工業。成立於西元1978年。是一間位於台灣新北市中和區的專業端子台生產工廠。</p>
+                        <a href="# connection-b">閱讀更多</a>
+                    </div>
+                </div>
+                <div class="d-flex mt-2">
+                    <div>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="h5 connection-a">我在哪裡</p>
+                        <p class="connection-b">我們位於新北市中和區。可在40分鐘內到達港口，也可在40分鐘內到達機場。快速道路以及高速公路的經過，讓我們可快速的完成運輸作業。</p>
+                        <a href="# connection-b">閱讀更多</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--floor-->
+
+    <section class="container py-1 bg-dark text-white">
+        <HR class="mt-0" size="auto">
+        <div class="ccontainer mt-0">
+            <div class="row" style="height:50px">
+                <p class="ml-5">Copyright © 2018
+                    <a href="#">享曆工業股份有限公司.</a> All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- bootstrap jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <!--手風琴下拉選單-->
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery-ui.min.js'></script>
+
+
+</body>
+
+</html>s

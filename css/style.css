@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+/*整體*/
+
+body {
+    color: rgb(25, 170, 228);
+    background: #000000;
+    font-family: 'Microsoft JhengHei';
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*底部資訊列*/
+
+.floor-title {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.floor-title-connection {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.floor-content-connection {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+/*上方導覽選單*/
+
+/*參考addons > smartmeanu*/
+
+/*首頁開始*/
+
+/*幻燈片*/
+
+.carousel-block {
+    margin-top: -50px;
+    margin-left: -16.5px;
+    margin-right: -16.5px;
+    margin-bottom: 30px;
+}
+
+.header-carousel-item {
+    min-height: 200px;
+    min-width: 150px;
+}
+
+.carousel-text {
+    color: #000000;
+    font-weight: bold;
+}
+
+/*三欄圖設*/
+
+.index-product-text {
+    text-align: center;
+}
+
+.img-thumbnail-sz {
+    min-height: 200px;
+    width: 500px;
+}
+
+/*公司概述顏色*/
+
+@media (min-width: 768px) {
+    .text-md-dark {
+        color: #333;
+    }
+}
+
+.img-bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
+/*首頁結束*/
+
+/*公司簡介開始*/
+
+/*商品分類*/
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.jumbotron-bg {
+    background-image: url('https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=1047&q=80');
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px;
+    max-height: 280px;
+    width: 100%;
+}
+
+.bg-lighter {
+    background-color: rgba(15, 10, 10, 0.4);
+    width: 100%;
+}
+
+.lead {
+    font-size: 17px;
+}
+
+/*左側下拉風琴選單*/
+
+.sidebar {
+    width: 230px;
+    height: auto;
+    background: #faf6f6;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.sidebar #leftside-navigation ul,
+.sidebar #leftside-navigation ul ul {
+    margin: -2px 0 0;
+    padding: 0;
+}
+
+.sidebar #leftside-navigation ul li {
+    list-style-type: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar #leftside-navigation ul li.active>a {
+    color: #6e1abc;
+}
+
+.sidebar #leftside-navigation ul li.active ul {
+    display: block;
+}
+
+.sidebar #leftside-navigation ul li a {
+    color: #5897e4;
+    text-decoration: none;
+    display: block;
+    padding: 18px 0 18px 25px;
+    font-size: 13px;
+    outline: 0;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.sidebar #leftside-navigation ul li a:hover {
+    color: #c415f0;
+}
+
+.sidebar #leftside-navigation ul li a span {
+    display: inline-block;
+}
+
+.sidebar #leftside-navigation ul li a i {
+    width: 20px;
+}
+
+.sidebar #leftside-navigation ul li a i .fa-angle-left,
+.sidebar #leftside-navigation ul li a i .fa-angle-right {
+    padding-top: 3px;
+}
+
+.sidebar #leftside-navigation ul ul {
+    display: none;
+}
+
+.sidebar #leftside-navigation ul ul li {
+    background: #f8f3f3;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: none;
+}
+
+.sidebar #leftside-navigation ul ul li a {
+    font-size: 13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #429cd8;
+}
+
+/*推薦商品*/
+
+.Recommendedroducts {
+    height: 50px;
+}
+
+/*麵包屑*/
+
+.breadcrumb>li+li:before {
+    color: rgb(136, 125, 125);
+    content: ">";
+    padding: 0 5px;
+}
+
+.breadcrumb {
+    padding-top: 15px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+/*公司介紹*/
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.card-title-size {
+    font-size: 25px;
+    font-weight: 500;
+    color: #075b92
+}
+
+.card-text-size {
+    font-size: 15px;
+    color: #586b77
+}
+
+.Certification-size {
+    width: 50px;
+    height: 50px;
+}
+
+/*公司簡介結束*/
+
+/*聯絡我們開始*/
+
+/*文字區塊*/
+
+.Contact-details {
+    font-weight: 900;
+    font-size: 30 px;
+}
+
+/*聯絡我們結束*/
+
+/*產品介紹開始*/
+
+/*商品區塊*/
+
+.card-img-top {
+    height: auto;
+    width: auto;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.box-shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+    transition: box-shadow .3s;
+}
+
+.box-shadow:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+}
+
+/*產品介紹結束*/
+
+/*產品頁面細項開始*/
+
+/*表格標題設定*/
+
+th {
+    background-color: #ffb342;
+}
+
+/*表格內容設定*/
+
+td {
+    background-color: rgba(255, 224, 85, 0.3);
+}
+
+/*產品頁面細項結束*/
+
+/*常見問題開始*/
+
+.problem-titile-header {
+    background-color: rgb(255, 147, 75);
+    font-size: 19px;
+    padding: 10px 0px 10px 0px;
+}
+
+/*常見問題結束*/
+
+/* 表單開始 */
+
+#form_body {
+    font-family: 'Microsoft JhengHei';
+    background-color: #f8f9fa;
+    color: gray;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+#form_3 ul li {
+    list-style: none;
+}
+
+.description {
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    font-weight: 900;
+}
+
+#form_body textarea.textarea {
+    background: #fdfdfd;
+    border-bottom: 1px solid #c0c0bf;
+    border-left: 1px solid #e4e4e2;
+    border-right: 1px solid #e4e4e2;
+    border-top: 1px solid #e4e4e2;
+    color: gray;
+    font-family: "Open Sans", "微軟正黑體", Arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 4px;
+    width: auto;
+}
+
+.element text large {
+    width: 200px;
+}
+
+.required {
+    color: red;
+}
+
+input{
+    width: 250px;
+    color: gray;
+}
+
+input.button_text{
+    width: 100px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+/* 表單結束 */
