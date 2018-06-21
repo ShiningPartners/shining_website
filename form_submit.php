@@ -46,7 +46,7 @@ $mail->IsSMTP();
 
 // SMTP 伺服器的設定，以及驗證資訊
 $mail->SMTPAuth = true;
-$mail->Host = "mail.XXX.com"; //此處請填寫您的郵件伺服器位置,通常是mail.網址。如果您MX指到外地，那這邊填入www.XXX.com 即可
+$mail->Host = "mail.shining.com.tw"; //此處請填寫您的郵件伺服器位置,通常是mail.網址。如果您MX指到外地，那這邊填入www.XXX.com 即可
 $mail->Port = 25; //主機的郵件伺服器port為 25
 
 // 信件內容的編碼方式
@@ -56,15 +56,15 @@ $mail->CharSet = "utf-8";
 $mail->Encoding = "base64";
 
 // SMTP 驗證的使用者資訊
-$mail->Username = "admin@ahao850512.com"; // 此處為驗証電子郵件帳號,就是您在ServerZoo主機上新增的電子郵件帳號，＠後面請務必一定要打。
-$mail->Password = "12345678"; //此處為上方電子郵件帳號的密碼 (一定要正確不然會無法寄出)
+$mail->Username = "admin@shining.com.tw"; // 此處為驗証電子郵件帳號,就是您主機上新增的電子郵件帳號，＠後面請務必一定要打。
+$mail->Password = "J-NbJP$M^^kr"; //此處為上方電子郵件帳號的密碼 (一定要正確不然會無法寄出)
 
 // 信件內容設定
-$mail->From = "admin@ahao850512.com"; //此處為寄出後收件者顯示寄件者的電子郵件 (請設成與上方驗証電子郵件一樣的位址)
+$mail->From = "admin@shining.com.tw"; //此處為寄出後收件者顯示寄件者的電子郵件 (請設成與上方驗証電子郵件一樣的位址)
 $mail->FromName = "來自shining_form，寄件者:" . $contact_firstname . $contact_lastname; //此處為寄出後收件者顯示寄件者的名稱
 $mail->Subject = "信件標題:" . $subject; //此處為寄出後收件者顯示寄件者的電子郵件標題
-$mail->Body = "內容:" . $requirements . "<br>公司名稱:" . $company_name . "<br>公司網站:" . $company_website . "<br>國家:" . $country . "<br>聯絡人:" . $contact_firstname . $contact_lastname; 
-$mail->Body ="<br>Mail:" . $mail ."<br>Tel:" . $tel ."<br>Fax:" . $fax ."<br>Address:" . $address; //信件內容 
+$mail->Body = "內容:" . $requirements . "<br>公司名稱:" . $company_name . "<br>公司網站:" . $company_website . "<br>國家:" . $country . "<br>聯絡人:" . $contact_firstname . $contact_lastname ."<br>Mail:" . $mail ;
+// ."<br>Tel:" . $tel ."<br>Fax:" . $fax ."<br>Address:" . $address; //信件內容 
 $mail->IsHTML(true);
 
 // 收件人

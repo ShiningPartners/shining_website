@@ -6,9 +6,9 @@ error_reporting(E_ALL);
 
 $link = mysqli_connect(
 	"localhost", 
-	"chienhao_user", 
-	"RLUI6b.3y^Bm", 
-	"chienhao_db"
+	"shining_admin", 
+	"UBOB6!~On7@?", 
+	"shining_productDB"
 );
 
 mysqli_set_charset($link, 'utf8');
