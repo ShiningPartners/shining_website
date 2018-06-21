@@ -1,3 +1,4 @@
 {
-    "git.ignoreLimitWarning": true
+    "tfvc.restrictWorkspace": true,
+    "tfvc.location": "D:\\Visual Studio 2017\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\TF.exe",
 }
