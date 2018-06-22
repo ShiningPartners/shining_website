@@ -32,25 +32,10 @@
     <link rel='stylesheet' href='css/style.css'>
     <!-- SmartMenus jQuery Bootstrap 4 Addon CSS -->
     <link href="addons/bootstrap-4/jquery.smartmenus.bootstrap-4.css" rel="stylesheet">
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5K8J4LL');</script>
-    <!-- End Google Tag Manager -->
 </head>
 
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K8J4LL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!--上方社群列icon開始-->
     <div class="bg-secondary py-1 text-right">
         <div class="container">
@@ -628,8 +613,8 @@
                                             alt="享曆工業 - QR二維碼">
                                         <p class="text-center">享曆工業 - QR二維碼</p>
                                     </div>
-                                    <!--表單開始-->
-                                    <div class="col-lg-12 col-md-12 col--12">
+                                             <!--表單開始-->
+                                             <div class="col-lg-12 col-md-12 col--12">
                                         <form id="form_3" class="appnitro" enctype="multipart/form-data" method="post" action="form_submit.php" target="nm_iframe">
                                             <ul>
                                                 <div class="form_description">
@@ -1048,7 +1033,10 @@
 
                                     </div>
                                     <!--表單結束-->
-                            
+                                    <div class="embed-responsive embed-responsive-16by9 mt-4" style="height:300px; width:480px;">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1sL4S_GI-Dc" frameborder="0" allow="autoplay; encrypted-media"
+                                            allowfullscreen></iframe>
+                                    </div>
                                     <div class="embed-responsive embed-responsive-16by9 mt-4" style="height:300px; width:480px;">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1sL4S_GI-Dc" frameborder="0" allow="autoplay; encrypted-media"
                                             allowfullscreen></iframe>
@@ -1060,8 +1048,8 @@
                         <section>
                             <div class="container">
                                 <div class="row">
-                                    <div class="ml-3">
-                                        <iframe src="https://www.google.com/maps/d/embed?mid=1knP-8oiLLJ1ZYJXLiyU0culNCkM" width="480px" height="300px"></iframe>
+                                    <div>
+                                        <iframe src="https://www.google.com/maps/d/embed?mid=1knP-8oiLLJ1ZYJXLiyU0culNCkM" width="480" height="300"></iframe>
                                         <p>在更大的地圖中查看
                                             <a href="https://www.google.com/maps/d/viewer?mid=1knP-8oiLLJ1ZYJXLiyU0culNCkM&ll=25.00359245218725%2C121.48778707871247&z=18">享曆工業股份有限公司</a>
                                         </p>
@@ -1072,147 +1060,153 @@
                     </div>
                 </div>
                 <!--聯絡我們結束-->
-                <!--底部資訊條開始-->
 
-                <section class="container py-4 bg-dark text-white ">
-                    <div class="row">
-                        <div class="col-md-4  col-sm-6">
-                            <p class="title-c">聯絡資訊</p>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="connection-a">+886 2226-9431</p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="connection-a">hsichin2@ms37.hinet.net</p>
-                                    <p class="connection-a">sales1@shining.com.tw</p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="connection-a">No. 76, Jian-Liou Road, Chung-Ho District, New Taipei City, 23585 Taiwan</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3  col-sm-6">
-                            <p class="title-c">資訊</p>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="connection-a">
-                                        <a href="#">公司介紹</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="connection-a">
-                                        <a href="#">產品介紹</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="connection-a">
-                                        <a href="#">最新消息</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="connection-a">
-                                        <a href="#">常見問題</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="connection-a">
-                                        <a href="#">聯絡我們</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <p class="title-c">我們的服務</p>
-                            <div class="d-flex">
-                                <div>
-                                    <i class="fa fa-map-signs " aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="h5 connection-a">我是誰</p>
-                                    <p class="connection-b">我們是享曆工業。成立於西元1978年。是一間位於台灣新北市中和區的專業端子台生產工廠。</p>
-                                    <a href="# connection-b">閱讀更多</a>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2">
-                                <div>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <p class="h5 connection-a">我在哪裡</p>
-                                    <p class="connection-b">我們位於新北市中和區。可在40分鐘內到達港口，也可在40分鐘內到達機場。快速道路以及高速公路的經過，讓我們可快速的完成運輸作業。</p>
-                                    <a href="# connection-b">閱讀更多</a>
-                                </div>
-                            </div>
-                        </div>
-                </section>
-                <!--底部資訊條結束-->
-                <!--floor開始-->
+    </section>
 
-                <section class="container py-1 bg-dark text-white">
-                    <HR class="mt-0" size="auto">
-                    <div class="ccontainer mt-0">
-                        <div class="row" style="height:50px">
-                            <p class="ml-5">Copyright © 2018
-                                <a href="#">享曆工業股份有限公司.</a> All Rights Reserved.</p>
-                        </div>
+
+
+
+    <!--底部資訊條開始-->
+
+    <section class="container py-4 bg-dark text-white ">
+        <div class="row">
+            <div class="col-md-4  col-sm-6">
+                <p class="title-c">聯絡資訊</p>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
                     </div>
-                </section>
-                <!--floor結束-->
+                    <div>
+                        <p class="connection-a">+886 2226-9431</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">hsichin2@ms37.hinet.net</p>
+                        <p class="connection-a">sales1@shining.com.tw</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">No. 76, Jian-Liou Road, Chung-Ho District, New Taipei City, 23585 Taiwan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3  col-sm-6">
+                <p class="title-c">資訊</p>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">公司介紹</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">產品介紹</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">最新消息</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">常見問題</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="connection-a">
+                            <a href="#">聯絡我們</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <p class="title-c">我們的服務</p>
+                <div class="d-flex">
+                    <div>
+                        <i class="fa fa-map-signs " aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="h5 connection-a">我是誰</p>
+                        <p class="connection-b">我們是享曆工業。成立於西元1978年。是一間位於台灣新北市中和區的專業端子台生產工廠。</p>
+                        <a href="# connection-b">閱讀更多</a>
+                    </div>
+                </div>
+                <div class="d-flex mt-2">
+                    <div>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="h5 connection-a">我在哪裡</p>
+                        <p class="connection-b">我們位於新北市中和區。可在40分鐘內到達港口，也可在40分鐘內到達機場。快速道路以及高速公路的經過，讓我們可快速的完成運輸作業。</p>
+                        <a href="# connection-b">閱讀更多</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--底部資訊條結束-->
+    <!--floor開始-->
+
+    <section class="container py-1 bg-dark text-white">
+        <HR class="mt-0" size="auto">
+        <div class="ccontainer mt-0">
+            <div class="row" style="height:50px">
+                <p class="ml-5">Copyright © 2018
+                    <a href="#">享曆工業股份有限公司.</a> All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!--floor結束-->
 
 
 
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-                    crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-                    crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
 
-                <!-- 上方導覽選單插件 jQuery  -->
-                <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+    <!-- 上方導覽選單插件 jQuery  -->
+    <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
 
-                <!-- 上方導覽選單插件 jQuery Bootstrap 4 Addon -->
-                <script type="text/javascript" src="addons/bootstrap-4/jquery.smartmenus.bootstrap-4.js"></script>
+    <!-- 上方導覽選單插件 jQuery Bootstrap 4 Addon -->
+    <script type="text/javascript" src="addons/bootstrap-4/jquery.smartmenus.bootstrap-4.js"></script>
 
-                <!--左邊導覽選單-->
-                <script src='js/jquery.min.js'></script>
+    <!--左邊導覽選單-->
+    <script src='js/jquery.min.js'></script>
 
 
 </body>
