@@ -2,6 +2,25 @@
 
 ini_set('display_errors', 1);
 
+// google驗證
+require_once "recaptchalib.php";
+// if submitted check response
+// your secret key
+$secret = "6LcHMmAUAAAAABRzKyeYwkpzBosVYFelivsx1FFl";
+ 
+// empty response
+$response = null;
+ 
+// check secret key
+$reCaptcha = new ReCaptcha($secret);
+// if submitted check response
+if ($_POST["g-recaptcha-response"]) {
+    $response = $reCaptcha->verifyResponse(
+        $_SERVER["REMOTE_ADDR"],
+        $_POST["g-recaptcha-response"]
+    );
+}
+  
 $subject = $_POST['element_17'];
 $requirements = $_POST['element_12'];
 // $files                  = $_POST['element_20'];

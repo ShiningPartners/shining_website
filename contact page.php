@@ -40,11 +40,45 @@
     <div class="bg-secondary py-1 text-right">
         <div class="container">
             <a href="#" class="text-white mr-2">
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
             </a>
             <a href="#" class="text-white">
-                <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-google-plus-square fa-1x" aria-hidden="true"></i>
             </a>
+            <a style="font-size:13px; margin-left: 10px; font-weight:900; color:aliceblue;">language:</a>
+              <select style="font-size:12px;" name="choose_language" id="language" onChange="location = this.options[this.selectedIndex].value;">
+                <option value="@en@" hreflang="en">English</option>
+                <option value="@es@" hreflang="es">Español</option>
+                <option value="@pt@" hreflang="pt">Português</option>
+                <option value="@de@" hreflang="de">Deutsch</option>
+                <option value="@fr@" hreflang="fr">Français</option>
+                <option value="@it@" hreflang="it">Italiano</option>
+                <option value="@nl@" hreflang="nl">Nederlands</option>
+                <option value="@da@" hreflang="da">Dansk</option>
+                <option value="@fi@" hreflang="fi">Suomen</option>
+                <option value="@sv@" hreflang="sv">Svenska</option>
+                <option value="@pl@" hreflang="pl">Polska</option>
+                <option value="@ru@" hreflang="ru">Русский</option>
+                <option value="@hu@" hreflang="hu">Magyar</option>
+                <option value="@cs@" hreflang="cs">česky</option>
+                <option value="@be@" hreflang="be">Беларуская</option>
+                <option value="@uk@" hreflang="uk">українська</option>
+                <option value="@sk@" hreflang="sk">slovenčina</option>
+                <option value="@bg@" hreflang="bg">Български</option>
+                <option value="@ar@" hreflang="ar">العربية</option>
+                <option value="@tr@" hreflang="tr">Türkçe</option>
+                <option value="@hi@" hreflang="hi">हिन्दी</option>
+                <option value="@bn@" hreflang="bn">বাঙ্গালী</option>
+                <option value="@tl@" hreflang="tl">Filipino</option>
+                <option value="@th@" hreflang="th">ไทย</option>
+                <option value="@vi@" hreflang="vi">Việt</option>
+                <option value="@ms@" hreflang="ms">Bahasa Melayu</option>
+                <option value="@id@" hreflang="id">Indonesia</option>
+                <option value="@zh-TW@" hreflang="zh-TW" selected>中文 (繁體)</option>
+                <option value="@zh-CN@" hreflang="zh-CN">中文 (简体)</option>
+                <option value="@ja@" hreflang="ja">日本語</option>
+                <option value="@ko@" hreflang="ko">한국어</option>
+            </select>
         </div>
     </div>
     <!--上方社群列icon結束-->
@@ -613,14 +647,22 @@
                                             alt="享曆工業 - QR二維碼">
                                         <p class="text-center">享曆工業 - QR二維碼</p>
                                     </div>
-                                             <!--表單開始-->
-                                             <div class="col-lg-12 col-md-12 col--12">
+                                    <!--表單開始-->
+                                    <?php
+require_once "recaptchalib.php";
+
+if ($response != null && $response->success) {
+    echo "Hi " . $_POST["name"] . " (" . $_POST["email"] . "), thanks for submitting the form!";
+} else {
+    ?>
+                                    <div class="col-lg-12 col-md-12 col--12">
                                         <form id="form_3" class="appnitro" enctype="multipart/form-data" method="post" action="form_submit.php" target="nm_iframe">
                                             <ul>
                                                 <div class="form_description">
                                                     <h2>聯繫表單</h2>
                                                     <p>請填寫一下表單，留下您清楚的訊息，我們會立即與您聯繫 For we can provide you a better service, please
-                                                        fill in all * fields below.</p>
+                                                        fill in all
+                                                        <span class="required">*</span> fields below.</p>
                                                 </div>
                                                 <li id="li_17">
                                                     <label class="description" for="element_17">標題 Subject
@@ -637,15 +679,13 @@
                                                     <label class="description" for="element_12">需求描述 Specific Requirements
                                                         <span id="required_12" class="required">*</span>
                                                     </label>
-                                                    <div>
-                                                        <textarea id="element_12" name="element_12" class="element textarea medium" rows="8" cols="90"></textarea>
-                                                    </div>
+                                                    <textarea class="form-control" rows="5" id="element_12" name="element_12" rows="8" cols="90"></textarea>
                                                     <p class="guidelines" id="guide_12">
                                                         <small>請完整描述您本次的需求內容 Please write down your specific requirements or tell
                                                             us details about your needs here.</small>
                                                     </p>
                                                 </li>
-                                                <li id="li_20">
+                                                <!-- <li id="li_20">
                                                     <label class="description" for="element_20">附件上傳 Upload a File
                                                         <small>(大小限制:10mb)</small>
                                                     </label>
@@ -656,7 +696,7 @@
                                                         <small>您可以上傳一個附件，例如圖檔。 If you have your request in a file, then you can
                                                             simply upload a file to us directly.</small>
                                                     </p>
-                                                </li>
+                                                </li> -->
                                                 <li id="li_19" class="section_break">
                                                     <h3>聯絡資料 Contact Information</h3>
                                                     <p></p>
@@ -675,18 +715,19 @@
                                                 <li id="li_13">
                                                     <label class="description" for="element_13">公司網站 Company Website </label>
                                                     <div>
-                                                        <input id="element_13" name="element_13" class="element text large" type="text" value="http://" />
+                                                        <input id="element_13" name="element_13" style="width:60%" class="element text large" type="text" value="http://" />
                                                     </div>
                                                     <p class="guidelines" id="guide_13">
                                                         <small>請輸入貴公司的網站URL Provide your company web site if you got one.</small>
                                                     </p>
                                                 </li>
+
                                                 <li id="li_18">
                                                     <label class="description" for="element_18">國家 Country
-                                                        <span id="required_18" class="required">*</span>
+                                                        <span id="required_18" class="required"> *</span>
                                                     </label>
                                                     <div>
-                                                        <select class="element select medium" id="element_18" name="element_18">
+                                                        <select class="custom-select my-1 mr-sm-2" style="width:60%" id="element_18" name="element_18">
                                                             <option value="Afghanistan">Afghanistan</option>
                                                             <option value="Albania">Albania</option>
                                                             <option value="Algeria">Algeria</option>
@@ -922,11 +963,12 @@
                                                             <option value="Zimbabwe">Zimbabwe</option>
 
                                                         </select>
-                                                    </div>&nbsp;
+                                                    </div>
                                                     <p class="guidelines" id="guide_18">
                                                         <small>請選擇您的國家 (預設為台灣) Please select your company location here.</small>
                                                     </p>
                                                 </li>
+
                                                 <li id="li_11">
                                                     <label class="description" for="element_11">商業型態 Business Type
                                                         <span id="required_11" class="required">*</span>
@@ -971,7 +1013,8 @@
                                                         <span id="required_3" class="required">*</span>
                                                     </label>
                                                     <div>
-                                                        <input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value="" />
+                                                        <input id="element_3" name="element_3" style="width:60%" class="element text medium" type="text" maxlength="255" value=""
+                                                        />
                                                     </div>
                                                     <p class="guidelines" id="guide_3">
                                                         <small>請留下您的電子郵件信箱 Please enter valid email address here.</small>
@@ -1006,19 +1049,11 @@
                                                         <small>如可以，請留下您的聯絡地址 Please enter correct post address here.</small>
                                                     </p>
                                                 </li>
-                                                <!-- <li id="li_captcha">
-                                                        <label class="description" for="element_captcha">Type the letters you see in the image below. </label>
-                                                        <div>
-                                                            <img id="captcha_image" src="captcha.php?t=1529048080" width="200" height="60" alt="Please refresh your browser to see this image."
-                                                            />
-                                                            <br />
-                                                            <input id="captcha_response_field" name="captcha_response_field" class="element text small" type="text" />
-                                                            <div id="dummy_captcha_internal"></div>
-                                                        </div>
-                                                    </li> -->
-
+                                                <!-- google驗證開始 -->
+                                                <div class="g-recaptcha" name="recaptcha" data-sitekey="6LcHMmAUAAAAAOLq08g6z6LZuExb7Q-OPZV9RFI9"></div>
+                                                <!-- google驗證結束 -->
                                                 <li id="li_buttons" class="buttons">
-                                                    <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+                                                    <input id="saveForm" type="submit" class="button_text" name="submit" onclick="return CheckFunc();" value="Submit">
                                                 </li>
                                                 <li class="cdpr">
                                                     <h3 style="font-size:x-small">We Need Your Consent</h3>
@@ -1029,14 +1064,64 @@
                                                 </li>
                                             </ul>
                                         </form>
+                                        <?php }?>
                                         <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+                                    </div>
+                                    <script language="javascript" type="text/javascript">
+                                        function CheckFunc() {
+                                            msg = "";
+                                            // 標題
+                                            if (document.forms[0].element_17.value == "") {
+                                                msg = "請填寫\"標題\"欄位";
+                                            }
+                                            // 需求
+                                            else if (document.forms[0].element_12.value == "") {
+                                                msg = "請填寫\"需求描述\"欄位";
+                                            }
+                                            // 公司名稱
+                                            else if (document.forms[0].element_2.value == "") {
+                                                msg = "請填寫\"公司名稱\"欄位";
+                                            }
+                                            // 商業型態
+                                            else if (document.forms[0].element_11.value == "") {
+                                                msg = "請選擇\"商業型態\"欄位";
+                                            }
+                                            // 國家
+                                            else if (document.forms[0].element_18.value == "") {
+                                                msg = "請選擇\"國家\"欄位";
+                                            }
+                                            // 聯絡人姓名
+                                            else if (document.forms[0].element_1_1.value == "") {
+                                                msg = "請填寫\"姓名\"欄位";
+                                            }
+                                            else if (document.forms[0].element_1_2.value == "") {
+                                                msg = "請填寫\"姓名\"欄位";
+                                            }
 
-                                    </div>
+                                            // email驗證
+                                            else if (document.forms[0].element_3.value == "") {
+                                                msg = "請填寫\"信箱\"欄位";
+                                            }
+                                            else if (document.forms[0].element_3.value.indexOf("@") < 1) {
+                                                msg = "請確認\"信箱\"欄位格式正確";
+                                            }
+                                            // 電話
+                                            else if (document.forms[0].element_4.value == "") {
+                                                msg = "請填寫\"電話\"欄位";
+                                            }
+                                            // 驗證
+                                            else if (grecaptcha.getResponse() == "") {
+                                                msg = "請勾選\"驗證\"欄位";
+                                            }
+                                            else {
+                                                alert("表單已送出，稍後將由專員連繫您。");
+                                                return true;
+                                            }
+                                            alert(msg);
+                                            return false;
+                                        }
+                                    </script>
                                     <!--表單結束-->
-                                    <div class="embed-responsive embed-responsive-16by9 mt-4" style="height:300px; width:480px;">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1sL4S_GI-Dc" frameborder="0" allow="autoplay; encrypted-media"
-                                            allowfullscreen></iframe>
-                                    </div>
                                     <div class="embed-responsive embed-responsive-16by9 mt-4" style="height:300px; width:480px;">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1sL4S_GI-Dc" frameborder="0" allow="autoplay; encrypted-media"
                                             allowfullscreen></iframe>
@@ -1049,7 +1134,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div>
-                                        <iframe src="https://www.google.com/maps/d/embed?mid=1knP-8oiLLJ1ZYJXLiyU0culNCkM" width="480" height="300"></iframe>
+                                        <iframe src="https://www.google.com/maps/d/embed?mid=1knP-8oiLLJ1ZYJXLiyU0culNCkM" width="400" height="300"></iframe>
                                         <p>在更大的地圖中查看
                                             <a href="https://www.google.com/maps/d/viewer?mid=1knP-8oiLLJ1ZYJXLiyU0culNCkM&ll=25.00359245218725%2C121.48778707871247&z=18">享曆工業股份有限公司</a>
                                         </p>
@@ -1207,7 +1292,8 @@
 
     <!--左邊導覽選單-->
     <script src='js/jquery.min.js'></script>
-
+    <!-- google驗證 -->
+    <script src='https://www.google.com/recaptcha/api.js?hl=zh-TW'></script>
 
 </body>
 
