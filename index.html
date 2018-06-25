@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-Hang-TW">
-<!--上方社群列icon開始-->
-<!--上方社群列icon結束-->
-<!--上方導覽列開始-->
-<!--上方導覽列結束-->
-<!--幻燈片開始-->
-<!--幻燈片結束-->
-<!--三欄排版內容開始-->
-<!--三欄排版內容結束-->
-<!--公司簡介開始-->
-<!--公司簡介結束-->
-<!--商品展示開始-->
-<!--商品展示結束-->
-<!--底部資訊條開始-->
-<!--底部資訊條結束-->
-<!--floor開始-->
-<!--floor結束-->
+<!-- 上方社群列icon開始 -->
+<!-- 上方社群列icon結束 -->
+<!-- 上方導覽列開始 -->
+<!-- 上方導覽列結束 -->
+<!-- 幻燈片開始 -->
+<!-- 幻燈片結束 -->
+<!-- 三欄排版內容開始 -->
+<!-- 三欄排版內容結束 -->
+<!-- 公司簡介開始 -->
+<!-- 公司簡介結束 -->
+<!-- 商品展示開始 -->
+<!-- 商品展示結束 -->
+<!-- 底部資訊條開始 -->
+<!-- 底部資訊條結束 -->
+<!-- floor開始 -->
+<!-- floor結束 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,20 +32,54 @@
 
 
 <body>
-    <!--上方社群列icon開始-->
+    <!-- 上方社群列icon開始 -->
     <div class="bg-secondary py-1 text-right">
         <div class="container">
             <a href="#fb#" class="text-white mr-2">
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
             </a>
             <a href="#google#" class="text-white">
-                <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-google-plus-square fa-1x" aria-hidden="true"></i>
             </a>
+            <a style="font-size:13px; margin-left: 10px; font-weight:900; color:aliceblue;">language:</a>
+            <select style="font-size:12px;" name="choose_language" id="language" onChange="location = this.options[this.selectedIndex].value;">
+                <option value="@en@" hreflang="en">English</option>
+                <option value="@es@" hreflang="es">Español</option>
+                <option value="@pt@" hreflang="pt">Português</option>
+                <option value="@de@" hreflang="de">Deutsch</option>
+                <option value="@fr@" hreflang="fr">Français</option>
+                <option value="@it@" hreflang="it">Italiano</option>
+                <option value="@nl@" hreflang="nl">Nederlands</option>
+                <option value="@da@" hreflang="da">Dansk</option>
+                <option value="@fi@" hreflang="fi">Suomen</option>
+                <option value="@sv@" hreflang="sv">Svenska</option>
+                <option value="@pl@" hreflang="pl">Polska</option>
+                <option value="@ru@" hreflang="ru">Русский</option>
+                <option value="@hu@" hreflang="hu">Magyar</option>
+                <option value="@cs@" hreflang="cs">česky</option>
+                <option value="@be@" hreflang="be">Беларуская</option>
+                <option value="@uk@" hreflang="uk">українська</option>
+                <option value="@sk@" hreflang="sk">slovenčina</option>
+                <option value="@bg@" hreflang="bg">Български</option>
+                <option value="@ar@" hreflang="ar">العربية</option>
+                <option value="@tr@" hreflang="tr">Türkçe</option>
+                <option value="@hi@" hreflang="hi">हिन्दी</option>
+                <option value="@bn@" hreflang="bn">বাঙ্গালী</option>
+                <option value="@tl@" hreflang="tl">Filipino</option>
+                <option value="@th@" hreflang="th">ไทย</option>
+                <option value="@vi@" hreflang="vi">Việt</option>
+                <option value="@ms@" hreflang="ms">Bahasa Melayu</option>
+                <option value="@id@" hreflang="id">Indonesia</option>
+                <option value="@zh-TW@" hreflang="zh-TW" selected>中文 (繁體)</option>
+                <option value="@zh-CN@" hreflang="zh-CN">中文 (简体)</option>
+                <option value="@ja@" hreflang="ja">日本語</option>
+                <option value="@ko@" hreflang="ko">한국어</option>
+            </select>
         </div>
     </div>
-    <!--上方社群列icon結束-->
+    <!-- 上方社群列icon結束 -->
 
-    <!--上方導覽列開始-->
+    <!-- 上方導覽列開始 -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand mr-4" href="#">
@@ -65,7 +100,7 @@
                         <a class="nav-link" href="#公司介紹#">公司介紹</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="product page.html">產品介紹</a>
+                        <a class="nav-link dropdown-toggle" href="#產品介紹#">產品介紹</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown">
                                 <a class="dropdown-item dropdown-toggle" href="#端子台#">端子台</a>
@@ -258,17 +293,11 @@
             </div>
         </div>
     </nav>
-    <!--上方導覽列結束-->
-
-
-
-
-
-
+    <!-- 上方導覽列結束 -->
 
     <section>
         <div class="container py-5 text-dark bg-light">
-            <!--幻燈片開始-->
+            <!-- 幻燈片開始 -->
             <header class="carousel-block clearfix">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -315,10 +344,10 @@
                     interval: 500
                 })
             </script>
-            <!--幻燈片結束-->
+            <!-- 幻燈片結束 -->
 
 
-            <!--三欄排版內容開始-->
+            <!-- 三欄排版內容開始 -->
             <div class="row mt-5">
                 <div class="col-md-4">
                     <img src="http://fakeimg.pl/440x320/282828/EAE0D0/" class="img-fluid  img-thumbnail-sz" alt="Responsive image">
@@ -336,11 +365,11 @@
                     <p class="index-product-text">@商品C敘述@</p>
                 </div>
             </div>
-            <!--三欄排版內容結束-->
+            <!-- 三欄排版內容結束 -->
         </div>
     </section>
 
-    <!--公司簡介開始-->
+    <!-- 公司簡介開始 -->
     <section class="container py-5 bg-light text-white" style="position:relative">
         <div class="row">
             <div class="col-md-5 img-bg-cover" style="position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1498309313100-e308c8946b45?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=)"></div>
@@ -355,10 +384,10 @@
             </div>
         </div>
     </section>
-    <!--公司簡介結束-->
+    <!-- 公司簡介結束 -->
 
 
-    <!--商品展示開始-->
+    <!-- 商品展示開始 -->
     <section class="container py-4 bg-white">
         <h2 class="text-center my-2">熱門產品</h2>
         <HR class="mt-0" size="auto">
@@ -387,9 +416,9 @@
             </div>
         </div>
     </section>
-    <!--商品展示結束-->
+    <!-- 商品展示結束 -->
 
-    <!--底部資訊條開始-->
+    <!-- 底部資訊條開始 -->
 
     <section class="container py-4 bg-dark text-white ">
         <div class="row">
@@ -498,10 +527,9 @@
                 </div>
             </div>
     </section>
-    <!--底部資訊條結束-->
+    <!-- 底部資訊條結束 -->
 
-    <!--floor開始-->
-
+    <!-- floor開始 -->
     <footer>
         <section class="container py-1 bg-dark text-white">
             <HR class="mt-0" size="auto">
@@ -513,7 +541,7 @@
             </div>
         </section>
     </footer>
-    <!--floor結束-->
+    <!-- floor結束 -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
