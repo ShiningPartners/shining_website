@@ -1,0 +1,49 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+
+
+
+Redirect 301 http://www.shining.com.tw/2CT/CT_support_application_info_terminology_electronic.htm http://www.shining.com.tw//2CT/CT_support_application_info_terminology_electronic.html
+
+
+Redirect 301 http://www.shining.com.tw/2CT/CT_support_application_info_terminology_electrical.htm http://www.shining.com.tw/2CT/CT_support_application_info_terminology_electrical.html
+
+
+Redirect 301 http://www.shining.com.tw/2CT/CT_support_application_info_terminology_mechanical.htm http://www.shining.com.tw/2CT/CT_support_application_info_terminology_mechanical.html
+
+
+Redirect 301 http://www.shining.com.tw/2CT/CT_support_application_info_terminal_blocks.htm http://www.shining.com.tw/2CT/CT_support_application_info_terminal_blocks.html
+
+
+Redirect 301 http://www.shining.com.tw/2CT/CT_terminal_blocks.htm http://www.shining.com.tw/2CT/CT_terminal_blocks.html
+
+
+Redirect 301 http://www.shining.com.tw/2CT/CT_Shining_toppage.htm http://www.shining.com.tw/2CT/CT_Shining_toppage.html
+
+
+
+# 新增
+
+# disable directory browsing
+Options All -Indexes
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<files db.php>
+order allow,deny
+deny from all
+</files>
+
+# <files form_submit.php>
+# order allow,deny
+# deny from all
+# </files>
