@@ -100,8 +100,8 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse  navbar-collapse-hide" id="navbarSupportedContent" style="margin-left: 200px;">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="margin-right:-10px;">
+                                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="@#首頁#@">@首頁@
                             <span class="sr-only"></span>
