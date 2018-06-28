@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="zh-Hang-TW">
-<!--上方社群列icon開始-->
-<!--上方社群列icon結束-->
-<!--上方導覽列開始-->
-<!--上方導覽列結束-->
-<!--商品分類看板開始-->
-<!--商品分類看板結束-->
-<!--麵包屑開始-->
-<!--麵包屑結束-->
-<!--左側下拉選單開始-->
-<!--左側下拉選單結束-->
-<!--推薦商品開始-->
-<!--推薦商品結束-->
-<!--服務簡介開始-->
-<!--服務簡介結束-->
-<!--商品區塊開始-->
-<!--商品區塊結束-->
-<!--底部資訊條開始-->
-<!--底部資訊條結束-->
-<!--floor開始-->
-<!--floor結束-->
+<!-- 上方社群列icon開始 -->
+<!-- 上方社群列icon結束 -->
+<!-- 上方導覽列開始 -->
+<!-- 上方導覽列結束 -->
+<!-- 商品分類看板開始 -->
+<!-- 商品分類看板結束 -->
+<!-- 麵包屑開始 -->
+<!-- 麵包屑結束 -->
+<!-- 左側下拉選單開始 -->
+<!-- 左側下拉選單結束 -->
+<!-- 推薦商品開始 -->
+<!-- 推薦商品結束 -->
+<!-- 服務簡介開始 -->
+<!-- 服務簡介結束 -->
+<!-- 商品區塊開始 -->
+<!-- 商品區塊結束 -->
+<!-- 底部資訊條開始 -->
+<!-- 底部資訊條結束 -->
+<!-- floor開始 -->
+<!-- floor結束 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,24 +36,58 @@
 
 
 <body>
-    <!--上方社群列icon開始-->
+    <!-- 上方社群列icon開始 -->
     <div class="bg-secondary py-1 text-right">
         <div class="container">
-            <a href="#" class="text-white mr-2">
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            <a href="#fb#" class="text-white mr-2">
+                <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
             </a>
-            <a href="#" class="text-white">
-                <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+            <a href="#google#" class="text-white">
+                <i class="fa fa-google-plus-square fa-1x" aria-hidden="true"></i>
             </a>
+            <a style="font-size:13px; margin-left: 10px; font-weight:900; color:aliceblue;">language:</a>
+            <select style="font-size:12px;" name="choose_language" id="language" onChange="location = this.options[this.selectedIndex].value;">
+                <option value="@#en#@" hreflang="en">English</option>
+                <option value="@#es#@" hreflang="es">Español</option>
+                <option value="@#pt#@" hreflang="pt">Português</option>
+                <option value="@#de#@" hreflang="de">Deutsch</option>
+                <option value="@#fr#@" hreflang="fr">Français</option>
+                <option value="@#it#@" hreflang="it">Italiano</option>
+                <option value="@#nl#@" hreflang="nl">Nederlands</option>
+                <option value="@#da#@" hreflang="da">Dansk</option>
+                <option value="@#fi#@" hreflang="fi">Suomen</option>
+                <option value="@#sv#@" hreflang="sv">Svenska</option>
+                <option value="@#pl#@" hreflang="pl">Polska</option>
+                <option value="@#ru#@" hreflang="ru">Русский</option>
+                <option value="@#hu#@" hreflang="hu">Magyar</option>
+                <option value="@#cs#@" hreflang="cs">česky</option>
+                <option value="@#be#@" hreflang="be">Беларуская</option>
+                <option value="@#uk#@" hreflang="uk">українська</option>
+                <option value="@#sk#@" hreflang="sk">slovenčina</option>
+                <option value="@#bg#@" hreflang="bg">Български</option>
+                <option value="@#ar#@" hreflang="ar">العربية</option>
+                <option value="@#tr#@" hreflang="tr">Türkçe</option>
+                <option value="@#hi#@" hreflang="hi">हिन्दी</option>
+                <option value="@#bn#@" hreflang="bn">বাঙ্গালী</option>
+                <option value="@#tl#@" hreflang="tl">Filipino</option>
+                <option value="@#th#@" hreflang="th">ไทย</option>
+                <option value="@#vi#@" hreflang="vi">Việt</option>
+                <option value="@#ms#@" hreflang="ms">Bahasa Melayu</option>
+                <option value="@#id#@" hreflang="id">Indonesia</option>
+                <option value="@#zh-TW#@" hreflang="zh-TW" selected>中文 (繁體)</option>
+                <option value="@#zh-CN#@" hreflang="zh-CN">中文 (简体)</option>
+                <option value="@#ja#@" hreflang="ja">日本語</option>
+                <option value="@#ko#@" hreflang="ko">한국어</option>
+            </select>
         </div>
     </div>
-    <!--上方社群列icon結束-->
+    <!-- 上方社群列icon結束 -->
 
-    <!--上方導覽列開始-->
+    <!-- 上方導覽列開始 -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand mr-4" href="#">
-                <img src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/logo.png?v=1d52dd4f" alt="享曆工業股份有限公司 - 專業生產 | 端子台 | 保險絲座 | 固態繼電器 | 礙子 | 塑膠製品">
+                <img class="img-fluid" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/logo.png?v=1d52dd4f" alt="享曆工業股份有限公司 - 專業生產 | 端子台 | 保險絲座 | 固態繼電器 | 礙子 | 塑膠製品">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -60,211 +95,211 @@
             </button>
             <div class="collapse navbar-collapse  navbar-collapse-hide" id="navbarSupportedContent" style="margin-left: 200px;">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#首頁#">首頁
+                    <li class="nav-item">
+                        <a class="nav-link" href="@#首頁#@">@首頁@
                             <span class="sr-only"></span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#公司介紹#">公司介紹</a>
+                        <a class="nav-link" href="@#公司介紹#@">@公司介紹@</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#產品介紹#">產品介紹</a>
+                    <li class="nav-item dropdown   active">
+                        <a class="nav-link dropdown-toggle" href="@#產品介紹#@">@產品介紹@</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#端子台#">端子台</a>
+                                <a class="dropdown-item dropdown-toggle" href="@#端子台#@">@端子台@</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#軌道端子台#">軌道端子台</a>
+                                        <a class="dropdown-item" href="@#軌道端子台#@">@軌道端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#柵欄端子台#">柵欄端子台</a>
+                                        <a class="dropdown-item" href="@#柵欄端子台#@">@柵欄端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#陶瓷端子台#">陶瓷端子台</a>
+                                        <a class="dropdown-item" href="@#陶瓷端子台#@">@陶瓷端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#組合式雙層端子台#">組合式雙層端子台</a>
+                                        <a class="dropdown-item" href="@#組合式雙層端子台#@">@組合式雙層端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#雙排端子台#">雙排端子台</a>
+                                        <a class="dropdown-item" href="@#雙排端子台#@">@雙排端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#印刷電路板端子台#">印刷電路板端子台</a>
+                                        <a class="dropdown-item" href="@#印刷電路板端子台#@">@印刷電路板端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#電源端子台#">電源端子台</a>
+                                        <a class="dropdown-item" href="@#電源端子台#@">@電源端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#電源併接端子台#">電源併接端子台</a>
+                                        <a class="dropdown-item" href="@#電源併接端子台#@">@電源併接端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#柱螺栓端子台#">柱螺栓端子台</a>
+                                        <a class="dropdown-item" href="@#柱螺栓端子台#@">@柱螺栓端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#柱螺栓併接端子台#">柱螺栓併接端子台</a>
+                                        <a class="dropdown-item" href="@#柱螺栓併接端子台#@">@柱螺栓併接端子台@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#歐規端子台#">歐規端子台</a>
+                                        <a class="dropdown-item" href="@#歐規端子台#@">@歐規端子台@</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#保險絲座&保險絲盒#">保險絲座&保險絲盒</a>
+                                <a class="dropdown-item dropdown-toggle" href="@#保險絲座&保險絲盒#@">@保險絲座&保險絲盒@</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#保險絲座#">保險絲座</a>
+                                        <a class="dropdown-item" href="@#保險絲座#@">@保險絲座@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#保險絲盒#">保險絲盒</a>
+                                        <a class="dropdown-item" href="@#保險絲盒#@">@保險絲盒@</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">保險絲夾</a>
+                                <a class="dropdown-item dropdown-toggle" href="@#保險絲盒#@">@保險絲夾@</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#FC-5063CSXX系列 保險絲夾#">FC-5063CSXX系列 保險絲夾</a>
+                                        <a class="dropdown-item" href="@#FC-5063CSXX系列 保險絲夾#@">@FC-5063CSXX系列 保險絲夾@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#FC-5063BTXX系列 保險絲夾#">FC-5063BTXX系列 保險絲夾</a>
+                                        <a class="dropdown-item" href="@#FC-5063BTXX系列 保險絲夾#@">@FC-5063BTXX系列 保險絲夾@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#FC-5063BNXX系列 保險絲夾#">FC-5063BNXX系列 保險絲夾</a>
+                                        <a class="dropdown-item" href="@#FC-5063BNXX系列 保險絲夾#@">@FC-5063BNXX系列 保險絲夾@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#FC-4063CSXX系列 保險絲夾#">FC-4063CSXX系列 保險絲夾</a>
+                                        <a class="dropdown-item" href="@#FC-4063CSXX系列 保險絲夾#@">@FC-4063CSXX系列 保險絲夾@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#FC-4063BTXX系列 保險絲夾#">FC-4063BTXX系列 保險絲夾</a>
+                                        <a class="dropdown-item" href="@#FC-4063BTXX系列 保險絲夾#@">@FC-4063BTXX系列 保險絲夾@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#FC-4063XXBN系列 保險絲夾#">FC-4063XXBN系列 保險絲夾</a>
+                                        <a class="dropdown-item" href="@#FC-4063XXBN系列 保險絲夾#@">@FC-4063XXBN系列 保險絲夾@</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#保險絲#">保險絲</a>
+                                <a class="dropdown-item dropdown-toggle" href="@#保險絲#@">@保險絲@</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#F-0632G-XX系列 250V 6x30 玻璃管保險絲#">F-0632G-XX系列 玻璃管保險絲</a>
+                                        <a class="dropdown-item" href="@#F-0632G-XX系列 250V 6x30 玻璃管保險絲#@">@F-0632G-XX系列 玻璃管保險絲@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#F-1038C-XX系列 500V 10x38 陶瓷管保險絲#">F-1038C-XX系列 陶瓷管保險絲</a>
+                                        <a class="dropdown-item" href="@#F-1038C-XX系列 500V 10x38 陶瓷管保險絲#@">@F-1038C-XX系列 陶瓷管保險絲@</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#固態繼電器#">固態繼電器</a>
+                                <a class="dropdown-item dropdown-toggle" href="@#固態繼電器#@">@固態繼電器@</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#單相固態繼電器#">單相固態繼電器</a>
+                                        <a class="dropdown-item" href="@#單相固態繼電器#@">@單相固態繼電器@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#三相固態繼電器#">三相固態繼電器</a>
+                                        <a class="dropdown-item" href="@#三相固態繼電器#@">@三相固態繼電器@</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#絕緣礙子#">絕緣礙子</a>
+                                <a class="dropdown-item dropdown-toggle" href="@#絕緣礙子#@">@絕緣礙子@</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#低壓絕緣礙子#">低壓絕緣礙子</a>
+                                        <a class="dropdown-item" href="@#低壓絕緣礙子#@">@低壓絕緣礙子@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#高壓絕緣礙子#">高壓絕緣礙子</a>
+                                        <a class="dropdown-item" href="@#高壓絕緣礙子#@">@高壓絕緣礙子@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#匯流排#">匯流排</a>
+                                        <a class="dropdown-item" href="@#匯流排#@">@匯流排@</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#零件#">零件</a>
+                                <a class="dropdown-item dropdown-toggle" href="@#零件#@">@零件@</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#軌道#">軌道</a>
+                                        <a class="dropdown-item" href="@#軌道#@">@軌道@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#煞車擋片#">煞車擋片</a>
+                                        <a class="dropdown-item" href="@#煞車擋片#@">@煞車擋片@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#保險絲盒斷電指示燈#">保險絲盒斷電指示燈</a>
+                                        <a class="dropdown-item" href="@#保險絲盒斷電指示燈#@">@保險絲盒斷電指示燈@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#保險絲盒軌道轉接器#">保險絲盒軌道轉接器</a>
+                                        <a class="dropdown-item" href="@#保險絲盒軌道轉接器#@">@保險絲盒軌道轉接器@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#散熱器#">散熱器</a>
+                                        <a class="dropdown-item" href="@#散熱器#@">@散熱器@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#風扇#">風扇</a>
+                                        <a class="dropdown-item" href="@#風扇#@">@風扇@</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#短路片#">短路片</a>
+                                <a class="dropdown-item" href="@#短路片#@">@短路片@</a>
                             </li>
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#端子台快插#">端子台快插</a>
+                                <a class="dropdown-item dropdown-toggle" href="@#端子台快插#@">@端子台快插@</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#15A 快插#">15A 快插</a>
+                                        <a class="dropdown-item" href="@#15A 快插#@">@15A 快插@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#25A 快插#">25A 快插</a>
+                                        <a class="dropdown-item" href="@#25A 快插#@">@25A 快插@</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#35A 快插#">35A 快插</a>
+                                        <a class="dropdown-item" href="@#35A 快插#@">@35A 快插@</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#最新消息#">最新消息</a>
+                        <a class="nav-link dropdown-toggle" href="@#最新消息#@">@最新消息@</a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#消息一#">@消息一@</a>
+                                <a class="dropdown-item" href="@#消息一#@">@消息一@</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#消息二#">@消息二@</a>
+                                <a class="dropdown-item" href="@#消息二#@">@消息二@</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#常見問題#">常見問題</a>
+                        <a class="nav-link dropdown-toggle" href="@#常見問題#@">@常見問題@</a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#常見問題一#">@常見問題一@</a>
+                                <a class="dropdown-item" href="@#常見問題一#@">@常見問題一@</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#常見問題二#">@常見問題二@</a>
+                                <a class="dropdown-item" href="@#常見問題二#@">@常見問題二@</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#常見問題三#">@常見問題三@</a>
+                                <a class="dropdown-item" href="@#常見問題三#@">@常見問題三@</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#常見問題四#">@常見問題四@</a>
+                                <a class="dropdown-item" href="@#常見問題四#@">@常見問題四@</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#常見問題五#">@常見問題五@</a>
+                                <a class="dropdown-item" href="@#常見問題五#@">@常見問題五@</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#常見問題六#">@常見問題六@</a>
+                                <a class="dropdown-item" href="@#常見問題六#@">@常見問題六@</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#聯絡我們#">聯絡我們</a>
+                        <a class="nav-link" href="@#聯絡我們#@">@聯絡我們@</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--上方導覽列結束-->
+    <!-- 上方導覽列結束 -->
 
-    <!--商品分類看板開始-->
+    <!-- 商品分類看板開始 -->
     <section>
         <div class="container">
             <div class="row text-white">
@@ -279,332 +314,319 @@
             </div>
         </div>
     </section>
-    <!--商品分類看板結束-->
+    <!-- 商品分類看板結束 -->
 
     <section>
         <div class="container py-3 text-dark bg-light">
-            <!--麵包屑開始-->
+            <!-- 麵包屑開始 -->
             <ol class="breadcrumb breadcrumb-a pt-2 mb-1">
                 <li>
-                    <a href=" #首頁# "> 首頁 </a>
+                    <a href=" @#首頁#@ "> @首頁@ </a>
                 </li>
                 <li class="active">
-                    <a> 產品介紹 </a>
+                    <a> @產品介紹@ </a>
                 </li>
             </ol>
-            <!--麵包屑結束-->
+            <!-- 麵包屑結束 -->
 
-            <!--左側下拉選單開始-->
-
+            <!-- 左側下拉選單開始 -->
             <div class="row py-2">
                 <div class="col-lg-3 d-none d-lg-block">
-                    <div class="h5">選單</div>
+                    <div class="h5">@選單@</div>
                     <HR class="mt-0">
                     <aside class="sidebar">
                         <div id="leftside-navigation" class="nano">
                             <ul class="nano-content">
                                 <li>
-                                    <a href="#首頁#">
+                                    <a href="@#首頁#@">
                                         <i class="fa fa-dashboard"></i>
-                                        <span>首頁</span>
+                                        <span>@首頁@</span>
                                     </a>
                                 </li>
                                 <li class="sub-menu">
-                                    <a href="#公司介紹#">
+                                    <a href="@#公司介紹#@">
                                         <i class="fa fa-building"></i>
-                                        <span>公司介紹</span>
+                                        <span>@公司介紹@</span>
                                         <i class="arrow fa fa-angle-right pull-right"></i>
                                     </a>
                                 </li>
                                 <li class="sub-menu">
-                                    <a href="#產品介紹#">
+                                    <a href="@#產品介紹#@">
                                         <i class="fa fa-cogs"></i>
-                                        <span>產品介紹</span>
+                                        <span>@產品介紹@</span>
                                         <i class="arrow fa fa-angle-right pull-right"></i>
                                     </a>
                                     <ul>
-                                        <li class="sub-menu-a">
-                                            <a href="#端子台#">
-                                                <span>端子台</span>
+                                        <li class="sub-menu-a ">
+                                            <a href="@#端子台#@">
+                                                <span>@端子台@</span>
                                                 <i class="arrow fa fa-angle-right pull-right"></i>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a class="dropdown-item" href="#軌道端子台#">軌道端子台</a>
+                                                    <a class="dropdown-item" href="@#軌道端子台#@">@軌道端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#柵欄端子台#">柵欄端子台</a>
+                                                    <a class="dropdown-item" href="@#柵欄端子台#@">@柵欄端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#陶瓷端子台#">陶瓷端子台</a>
+                                                    <a class="dropdown-item" href="@#陶瓷端子台#@">@陶瓷端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#組合式雙層端子台#">組合式雙層端子台</a>
+                                                    <a class="dropdown-item" href="@#組合式雙層端子台#@">@組合式雙層端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#雙排端子台#">雙排端子台</a>
+                                                    <a class="dropdown-item" href="@#雙排端子台#@">@雙排端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#印刷電路板端子台#">印刷電路板端子台</a>
+                                                    <a class="dropdown-item" href="@#印刷電路板端子台#@">@印刷電路板端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#電源端子台#">電源端子台</a>
+                                                    <a class="dropdown-item" href="@#電源端子台#@">@電源端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#電源併接端子台#">電源併接端子台</a>
+                                                    <a class="dropdown-item" href="@#電源併接端子台#@">@電源併接端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#柱螺栓端子台#">柱螺栓端子台</a>
+                                                    <a class="dropdown-item" href="@#柱螺栓端子台#@">@柱螺栓端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#柱螺栓併接端子台#">柱螺栓併接端子台</a>
+                                                    <a class="dropdown-item" href="@#柱螺栓併接端子台#@">@柱螺栓併接端子台@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#歐規端子台#">歐規端子台</a>
+                                                    <a class="dropdown-item" href="@#歐規端子台#@">@歐規端子台@</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="sub-menu-a">
-                                            <a href="#保險絲座&保險絲盒#">
-                                                <span>保險絲座&保險絲盒</span>
+                                            <a href="@#保險絲座&保險絲盒#@">
+                                                <span>@保險絲座&保險絲盒@</span>
                                                 <i class="arrow fa fa-angle-right pull-right"></i>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a class="dropdown-item" href="#保險絲座#">保險絲座</a>
+                                                    <a class="dropdown-item" href="@#保險絲座#@">@保險絲座@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#保險絲盒#">保險絲盒</a>
+                                                    <a class="dropdown-item" href="@#保險絲盒#@">@保險絲盒@</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="sub-menu-a">
-                                            <a href="#保險絲夾#">
-                                                <span>保險絲夾</span>
+                                            <a href="@#保險絲夾#@">
+                                                <span>@保險絲夾@</span>
                                                 <i class="arrow fa fa-angle-right pull-right"></i>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a class="dropdown-item" href="#FC-5063CSXX系列 保險絲夾#">FC-5063CSXX系列 保險絲夾</a>
+                                                    <a class="dropdown-item" href="@#FC-5063CSXX系列 保險絲夾#@">@FC-5063CSXX系列 保險絲夾@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#FC-5063BTXX系列 保險絲夾#">FC-5063BTXX系列 保險絲夾</a>
+                                                    <a class="dropdown-item" href="@#FC-5063BTXX系列 保險絲夾#@">@FC-5063BTXX系列 保險絲夾@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#FC-5063BNXX系列 保險絲夾#">FC-5063BNXX系列 保險絲夾</a>
+                                                    <a class="dropdown-item" href="@#FC-5063BNXX系列 保險絲夾#@">@FC-5063BNXX系列 保險絲夾@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#FC-4063CSXX系列 保險絲夾#">FC-4063CSXX系列 保險絲夾</a>
+                                                    <a class="dropdown-item" href="@#FC-4063CSXX系列 保險絲夾#@">@FC-4063CSXX系列 保險絲夾@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#FC-4063BTXX系列 保險絲夾#">FC-4063BTXX系列 保險絲夾</a>
+                                                    <a class="dropdown-item" href="@#FC-4063BTXX系列 保險絲夾#@">@FC-4063BTXX系列 保險絲夾@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#FC-4063XXBN系列 保險絲夾#">FC-4063XXBN系列 保險絲夾</a>
+                                                    <a class="dropdown-item" href="@#FC-4063XXBN系列 保險絲夾#@">@FC-4063XXBN系列 保險絲夾@</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="sub-menu-a">
-                                            <a href="#保險絲#">
-                                                <span>保險絲</span>
+                                            <a href="@#保險絲#@">
+                                                <span>@保險絲@</span>
                                                 <i class="arrow fa fa-angle-right pull-right"></i>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a class="dropdown-item" href="#F-0632G-XX系列 250V 6x30 玻璃管保險絲#">F-0632G-XX系列 玻璃管保險絲</a>
+                                                    <a class="dropdown-item" href="@#F-0632G-XX系列 250V 6x30 玻璃管保險絲#@">@F-0632G-XX系列 玻璃管保險絲@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#F-1038C-XX系列 500V 10x38 陶瓷管保險絲#">F-1038C-XX系列 陶瓷管保險絲</a>
+                                                    <a class="dropdown-item" href="@#F-1038C-XX系列 500V 10x38 陶瓷管保險絲#@">@F-1038C-XX系列 陶瓷管保險絲@</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="sub-menu-a">
-                                            <a href="#固態繼電器#">
-                                                <span>固態繼電器</span>
+                                            <a href="@#固態繼電器#@">
+                                                <span>@固態繼電器@</span>
                                                 <i class="arrow fa fa-angle-right pull-right"></i>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a class="dropdown-item" href="#單相固態繼電器#">單相固態繼電器</a>
+                                                    <a class="dropdown-item" href="@#單相固態繼電器#@">@單相固態繼電器@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#三相固態繼電器#">三相固態繼電器</a>
+                                                    <a class="dropdown-item" href="@#三相固態繼電器#@">@三相固態繼電器@</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="sub-menu-a">
-                                            <a href="#絕緣礙子#">
-                                                <span>絕緣礙子</span>
+                                            <a href="@#絕緣礙子#@">
+                                                <span>@絕緣礙子@</span>
                                                 <i class="arrow fa fa-angle-right pull-right"></i>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a class="dropdown-item" href="#低壓絕緣礙子#">低壓絕緣礙子</a>
+                                                    <a class="dropdown-item" href="@#低壓絕緣礙子#@">@低壓絕緣礙子@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#高壓絕緣礙子#">高壓絕緣礙子</a>
+                                                    <a class="dropdown-item" href="@#高壓絕緣礙子#@">@高壓絕緣礙子@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#匯流排#">匯流排</a>
+                                                    <a class="dropdown-item" href="@#匯流排#@">@匯流排@</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="sub-menu-a">
-                                            <a href="#零件#">
-                                                <span>零件</span>
+                                            <a href="@#零件#@">
+                                                <span>@零件@</span>
                                                 <i class="arrow fa fa-angle-right pull-right"></i>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a class="dropdown-item" href="#軌道#">軌道</a>
+                                                    <a class="dropdown-item" href="@#軌道#@">@軌道@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#煞車擋片#">煞車擋片</a>
+                                                    <a class="dropdown-item" href="@#煞車擋片#@">@煞車擋片@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#保險絲盒斷電指示燈#">保險絲盒斷電指示燈</a>
+                                                    <a class="dropdown-item" href="@#保險絲盒斷電指示燈#@">@保險絲盒斷電指示燈@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#保險絲盒軌道轉接器#">保險絲盒軌道轉接器</a>
+                                                    <a class="dropdown-item" href="@#保險絲盒軌道轉接器#@">@保險絲盒軌道轉接器@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#散熱器#">散熱器</a>
+                                                    <a class="dropdown-item" href="@#散熱器#@">@散熱器@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#風扇#">風扇</a>
+                                                    <a class="dropdown-item" href="@#風扇#@">@風扇@</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#短路片#">短路片</a>
+                                            <a href="@#短路片#@">@短路片@</a>
                                         </li>
                                         <li class="sub-menu-a">
-                                            <a href="#端子台快插#">
-                                                <span>端子台快插</span>
+                                            <a href="@#端子台快插#@">
+                                                <span>@端子台快插@</span>
                                                 <i class="arrow fa fa-angle-right pull-right"></i>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a class="dropdown-item" href="#15A 快插#">15A 快插</a>
+                                                    <a class="dropdown-item" href="@#15A 快插#@">@15A 快插@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#25A 快插#">25A 快插</a>
+                                                    <a class="dropdown-item" href="@#25A 快插#@">@25A 快插@</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#35A 快插#">35A 快插</a>
+                                                    <a class="dropdown-item" href="@#35A 快插#@">@35A 快插@</a>
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="sub-menu">
-                                    <a href="#最新消息#">
+                                    <a href="@#最新消息#@">
                                         <i class="fa fa-table"></i>
-                                        <span>最新消息</span>
+                                        <span>@最新消息@</span>
                                         <i class="arrow fa fa-angle-right pull-right"></i>
                                     </a>
                                     <ul>
                                         <li>
-                                            <a class="dropdown-item" href="#消息一#">@消息一@</a>
+                                            <a class="dropdown-item" href="@#消息一#@">@消息一@</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#消息二#">@消息二@</a>
+                                            <a class="dropdown-item" href="@#消息二#@">@消息二@</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="sub-menu">
-                                    <a href="#常見問題#">
+                                    <a href="@#常見問題#@">
                                         <i class="fa fa-question-circle"></i>
-                                        <span>常見問題</span>
+                                        <span>@常見問題@</span>
                                         <i class="arrow fa fa-angle-right pull-right"></i>
                                     </a>
                                     <ul>
                                         <li>
-                                            <a class="dropdown-item" href="#常見問題一#">@常見問題一@</a>
+                                            <a class="dropdown-item" href="@#常見問題一#@">@常見問題一@</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#常見問題二#">@常見問題二@</a>
+                                            <a class="dropdown-item" href="@#常見問題二#@">@常見問題二@</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#常見問題三#">@常見問題三@</a>
+                                            <a class="dropdown-item" href="@#常見問題三#@">@常見問題三@</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#常見問題四#">@常見問題四@</a>
+                                            <a class="dropdown-item" href="@#常見問題四#@">@常見問題四@</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#常見問題五#">@常見問題五@</a>
+                                            <a class="dropdown-item" href="@#常見問題五#@">@常見問題五@</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#常見問題六#">@常見問題六@</a>
+                                            <a class="dropdown-item" href="@#常見問題六#@">@常見問題六@</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="sub-menu">
-                                    <a href="#關於我們#">
+                                    <a href="@#關於我們#@">
                                         <i class="fa fa-envelope"></i>
-                                        <span>關於我們</span>
+                                        <span>@關於我們@</span>
                                         <i class="arrow fa fa-angle-right pull-right"></i>
                                     </a>
                                 </li>
                             </ul>
-                            <!--左側下拉選單結束-->
+                            <!-- 左側下拉選單結束 -->
 
-                            <!--推薦商品開始-->
+                            <!-- 推薦商品開始 -->
                             <HR class="mt-4">
-                            <h3 class="text-center">推薦商品</h3>
+                            <h3 class="text-center">@推薦商品@</h3>
                             <div class="card box-shadow border-0 text-center Recommended-products">
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">@推薦商品標題@</h5>
-                                    <p class="card-text">@推薦商品敘述@</p>
+                                    <p class="card-text">@推薦商品描述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#more#@" class="btn btn-primary">@more@</a>
                                 </div>
                             </div>
-                            <!--推薦商品結束-->
+                            <!-- 推薦商品結束 -->
 
-                            <!--服務簡介開始-->
+                            <!-- 服務簡介開始 -->
                             <HR class="mt-4">
-                            <h4 class="text-center">享曆服務簡介</h4>
-                            <p style="font-size:12px">享曆工業股份有限公司是台灣專業配電器材製造業製造商. 享曆自西元1978年起開始提供專業的端子台、電機端子台、端子台連接器、螺絲端子台、端子盤、接線座、配電端子台、保險絲座、保險絲管夾、固態繼電器、SSR、絕緣礙子、支持礙子、獨立端子、匯流排支持座、纜線夾。...等服務.
-                                擁有超過35年的專業經驗, 享曆總是可以達成客戶各項品質要求.</p>
-                            <!--服務簡介結束-->
-
+                            <h4 class="text-center">@享曆服務簡介@</h4>
+                            <p style="font-size:12px">@享曆服務簡介敘述@</p>
+                            <!-- 服務簡介結束 -->
                         </div>
-
                     </aside>
-                    <script src='js/jquery.min.js'></script>
-                    <script src='js/jquery-ui.min.js'></script>
-                    <script src="js/index.js"></script>
                 </div>
 
-
-
-
-                <!--商品區塊開始-->
+                <!-- 商品區塊開始 -->
                 <div class="col-lg-9 col-md-12">
-
                     <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/SHINING-Terminal-Blocks-W270H205.jpg?v=0da0205e"
                         alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title">@產品介紹標題@</h5>
                         <p class="card-text">@產品介紹敘述@</p>
-
                     </div>
                     <div class="row">
-
                         <div class="col-md-4 mb-4">
                             <div class="card box-shadow border-0 text-center h-100">
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">端子台</h5>
+                                    <h5 class="card-title">@端子台@</h5>
                                     <p class="card-text">@端子台敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#端子台more#@" class="btn btn-primary">@端子台more@</a>
                                 </div>
                             </div>
                         </div>
@@ -613,11 +635,11 @@
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">保險絲座&保險絲盒</h5>
+                                    <h5 class="card-title">@保險絲座&保險絲盒@</h5>
                                     <p class="card-text">@保險絲座&保險絲盒敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#保險絲座&保險絲盒more#@" class="btn btn-primary">@保險絲座&保險絲盒more@</a>
                                 </div>
                             </div>
                         </div>
@@ -626,11 +648,11 @@
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">保險絲夾</h5>
+                                    <h5 class="card-title">@保險絲夾@</h5>
                                     <p class="card-text">@保險絲夾敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#保險絲夾more#@" class="btn btn-primary">@保險絲夾more@</a>
                                 </div>
                             </div>
                         </div>
@@ -639,11 +661,11 @@
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">保險絲</h5>
+                                    <h5 class="card-title">@保險絲@</h5>
                                     <p class="card-text">@保險絲敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#保險絲more#@" class="btn btn-primary">@保險絲more@</a>
                                 </div>
                             </div>
                         </div>
@@ -652,11 +674,11 @@
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">固態繼電器</h5>
+                                    <h5 class="card-title">@固態繼電器@</h5>
                                     <p class="card-text">@固態繼電器敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#固態繼電器more#@" class="btn btn-primary">@固態繼電器more@</a>
                                 </div>
                             </div>
                         </div>
@@ -665,11 +687,11 @@
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">絕緣礙子</h5>
+                                    <h5 class="card-title">@絕緣礙子@</h5>
                                     <p class="card-text">@絕緣礙子敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#絕緣礙子more#@" class="btn btn-primary">@絕緣礙子more@</a>
                                 </div>
                             </div>
                         </div>
@@ -678,11 +700,11 @@
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">零件</h5>
+                                    <h5 class="card-title">@零件@</h5>
                                     <p class="card-text">@零件敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#零件more#@" class="btn btn-primary">@零件more@</a>
                                 </div>
                             </div>
                         </div>
@@ -691,11 +713,11 @@
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">短路片</h5>
+                                    <h5 class="card-title">@短路片@</h5>
                                     <p class="card-text">@短路片敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#短路片more#@" class="btn btn-primary">@短路片more@</a>
                                 </div>
                             </div>
                         </div>
@@ -704,17 +726,17 @@
                                 <img class="card-img-top img-fluid rounded mx-auto d-block" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/m/SHINING-TA-Series-35mm-Din-Rail-Mounted-Termianl-Block-W270H205.jpg?v=3be5b30d"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">端子台快插</h5>
+                                    <h5 class="card-title">@端子台快插@</h5>
                                     <p class="card-text">@端子台快插敘述@</p>
                                 </div>
                                 <div class="card-footer border-top-0 bg-white">
-                                    <a href="#" class="btn btn-primary">more</a>
+                                    <a href="@#端子台快插more#@" class="btn btn-primary">@端子台快插more@</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--商品區塊結束-->
+                <!-- 商品區塊結束 -->
             </div>
     </section>
 
@@ -722,18 +744,18 @@
 
 
 
-    <!--底部資訊條開始-->
+    <!-- 底部資訊條開始 -->
 
     <section class="container py-4 bg-dark text-white ">
         <div class="row">
             <div class="col-md-4  col-sm-6">
-                <p class="floor-title">聯絡資訊</p>
+                <p class="floor-title">@聯絡資訊@</p>
                 <div class="d-flex">
                     <div>
                         <i class="fa fa-phone-square" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <p class="floor-title-connection">+886 2226-9431</p>
+                        <p class="floor-title-connection">@+886 2226-9431@</p>
                     </div>
                 </div>
                 <div class="d-flex">
@@ -741,8 +763,8 @@
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                     </div>
                     <div class="ml-5;">
-                        <p class="floor-title-connection">hsichin2@ms37.hinet.net</p>
-                        <p class="floor-title-connection">sales1@shining.com.tw</p>
+                        <p class="floor-title-connection">@hsichin2@ms37.hinet.net@</p>
+                        <p class="floor-title-connection">@sales1@shining.com.tw@</p>
                     </div>
                 </div>
                 <div class="d-flex">
@@ -750,19 +772,19 @@
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <p class="floor-title-connection">No. 76, Jian-Liou Road, Chung-Ho District, New Taipei City, 23585 Taiwan</p>
+                        <p class="floor-title-connection">@No. 76, Jian-Liou Road, Chung-Ho District, New Taipei City, 23585 Taiwan@</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3  col-sm-6">
-                <p class="floor-title">資訊</p>
+                <p class="floor-title">@資訊@</p>
                 <div class="d-flex">
                     <div>
                         <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                     </div>
                     <div>
                         <p class="floor-title-connection">
-                            <a href="#公司介紹#">公司介紹</a>
+                            <a href="@#公司介紹#@">@公司介紹@</a>
                         </p>
                     </div>
                 </div>
@@ -772,7 +794,7 @@
                     </div>
                     <div>
                         <p class="floor-title-connection">
-                            <a href="#產品介紹#">產品介紹</a>
+                            <a href="@#產品介紹#@">@產品介紹@</a>
                         </p>
                     </div>
                 </div>
@@ -782,7 +804,7 @@
                     </div>
                     <div>
                         <p class="floor-title-connection">
-                            <a href="#最新消息#">最新消息</a>
+                            <a href="@#最新消息#@">@最新消息@</a>
                         </p>
                     </div>
                 </div>
@@ -792,7 +814,7 @@
                     </div>
                     <div>
                         <p class="floor-title-connection">
-                            <a href="#常見問題#">常見問題</a>
+                            <a href="@#常見問題#@">@常見問題@</a>
                         </p>
                     </div>
                 </div>
@@ -802,13 +824,13 @@
                     </div>
                     <div>
                         <p class="floor-title-connection">
-                            <a href="#聯絡我們#">聯絡我們</a>
+                            <a href="@#聯絡我們#@">@聯絡我們@</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-5">
-                <p class="floor-title">我們的服務</p>
+                <p class="floor-title">@我們的服務@</p>
                 <div class="d-flex">
                     <div>
                         <i class="fa fa-map-signs " aria-hidden="true"></i>
@@ -816,7 +838,7 @@
                     <div>
                         <p class="h5 floor-title-connection">@公司介紹@</p>
                         <p class="floor-content-connection">@公司介紹敘述@</p>
-                        <a href="#公司介紹#">閱讀更多</a>
+                        <a href="@#公司介紹#@">@閱讀更多@</a>
                     </div>
                 </div>
                 <div class="d-flex mt-2">
@@ -826,28 +848,27 @@
                     <div>
                         <p class="h5 floor-title-connection">@聯絡我們@</p>
                         <p class="floor-content-connection">@聯絡我們敘述@</p>
-                        <a href="#聯絡我們#">閱讀更多</a>
+                        <a href="@#聯絡我們#@">@閱讀更多@</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--底部資訊條結束-->
+    <!-- 底部資訊條結束 -->
 
-    <!--floor開始-->
-
+    <!-- floor開始 -->
     <footer>
         <section class="container py-1 bg-dark text-white">
             <HR class="mt-0" size="auto">
             <div class="container mt-0">
                 <div class="row " style="font-size:10px;">
-                    <p class="ml-5">Copyright © 2018
-                        <a href="#首頁#">享曆工業股份有限公司.</a> All Rights Reserved.</p>
+                    <p class="ml-5">@Copyright © 2018@
+                        <a href="@#首頁#@">@享曆工業股份有限公司.@</a>@ All Rights Reserved.@</p>
                 </div>
             </div>
         </section>
     </footer>
-    <!--floor結束-->
+    <!-- floor結束 -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -863,9 +884,9 @@
     <!-- 上方導覽選單插件 jQuery Bootstrap 4 Addon -->
     <script type="text/javascript" src="addons/bootstrap-4/jquery.smartmenus.bootstrap-4.js"></script>
 
-    <!--左邊導覽選單-->
+    <!-- 左邊導覽選單 -->
     <script src='js/jquery.min.js'></script>
-
+    <script src="js/index.js"></script>
 
 </body>
 

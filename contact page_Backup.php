@@ -618,32 +618,32 @@
                 <!-- 聯絡我們開始 -->
                 <div class="col-lg-9 col-md-12">
                     <div class="mb-2">
-                        <h2 style="color:rgb(0, 4, 235)">聯絡我們</h2>
+                        <h2 style="color:rgb(0, 4, 235)">@聯絡我們@</h2>
                         <div class="card-body">
-                            <h4 class="card-title-size mt-3">立即與我們連繫</h4>
+                            <h4 class="card-title-size mt-3">@立即與我們連繫@</h4>
                             <div class="container">
                                 <div class="row">
                                     <div class="mt-4 col-md-8">
-                                        <h3 style="color:rgb(24, 243, 225); font-weight:900; ">享曆工業股份有限公司
+                                        <h3 style="color:rgb(24, 243, 225); font-weight:900; ">@享曆工業股份有限公司@
                                         </h3>
                                         <div class="mt-5">
                                             <p class="Contact-details">
-                                                <a style="color:#f8a50a">地址：</a>23585 新北市中和區建六路76號</p>
+                                                <a style="color:#f8a50a">@地址：@</a>@23585 新北市中和區建六路76號@</p>
                                             <p class="Contact-details">
-                                                <a style="color:#f8a50a">電話：</a>+886-2-2221-7858</p>
+                                                <a style="color:#f8a50a">@電話：@</a>@+886-2-2221-7858@</p>
                                             <p class="Contact-details">
-                                                <a style="color:#f8a50a">傳真：</a>+886-2-2223-9430</p>
+                                                <a style="color:#f8a50a">@傳真：@</a>@+886-2-2223-9430@</p>
                                             <p class="Contact-details">
-                                                <a style="color:#f8a50a">E-mail：</a>
-                                                <a href="mailto:hsichin2@ms37.hinet.net">hsichin2@ms37.hinet.net</a>;
-                                                <a href="mailto:shining@60947.com">shining@60947.com</a>
+                                                <a style="color:#f8a50a">@E-mail：@</a>
+                                                <a href="mailto:hsichin2@ms37.hinet.net">@hsichin2@ms37.hinet.net@</a>;
+                                                <a href="mailto:shining@60947.com">@shining@60947.com@</a>
                                             </p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <img class="rounded mx-auto d-block img-fluid" src="https://cdn.ready-market.com/1/48d29a5d//Templates/pic/QR%20code%20SHINING.png?v=9f8da8a5"
                                             alt="享曆工業 - QR二維碼">
-                                        <p class="text-center">享曆工業 - QR二維碼</p>
+                                        <p class="text-center">@享曆工業 - QR二維碼@</p>
                                     </div>
                                     <!-- 表單開始 -->
                                     <?php
@@ -657,30 +657,30 @@ if ($response != null && $response->success) {
                                         <form id="form_3" class="appnitro" enctype="multipart/form-data" method="post" action="form_submit.php" target="nm_iframe">
                                             <ul>
                                                 <div class="form_description">
-                                                    <h2>聯繫表單</h2>
-                                                    <p>請填寫一下表單，留下您清楚的訊息，我們會立即與您聯繫 For we can provide you a better service, please
-                                                        fill in all
-                                                        <span class="required">*</span> fields below.</p>
+                                                    <h2>@聯繫表單@</h2>
+                                                    <p>@請填寫一下表單，留下您清楚的訊息，我們會立即與您聯繫 For we can provide you a better service,
+                                                        please fill in all@
+                                                        <span class="required">*</span> @fields below.@</p>
                                                 </div>
                                                 <li id="li_17">
-                                                    <label class="description" for="element_17">標題 Subject
+                                                    <label class="description" for="element_17">@標題 Subject@
                                                         <span id="required_17" class="required">*</span>
                                                     </label>
                                                     <div>
                                                         <input id="element_17" name="element_17" class="element text large" type="text" value="" />
                                                     </div>
                                                     <p class="guidelines" id="guide_17">
-                                                        <small>請填寫清楚的標題 Please subject your requirements here.</small>
+                                                        <small>@請填寫清楚的標題 Please subject your requirements here.@</small>
                                                     </p>
                                                 </li>
                                                 <li id="li_12">
-                                                    <label class="description" for="element_12">需求描述 Specific Requirements
+                                                    <label class="description" for="element_12">@需求描述 Specific Requirements@
                                                         <span id="required_12" class="required">*</span>
                                                     </label>
                                                     <textarea class="form-control" rows="5" id="element_12" name="element_12" rows="8" cols="90"></textarea>
                                                     <p class="guidelines" id="guide_12">
-                                                        <small>請完整描述您本次的需求內容 Please write down your specific requirements or tell
-                                                            us details about your needs here.</small>
+                                                        <small>@請完整描述您本次的需求內容 Please write down your specific requirements or tell
+                                                            us details about your needs here.@</small>
                                                     </p>
                                                 </li>
                                                 <!-- <li id="li_20">
@@ -696,32 +696,32 @@ if ($response != null && $response->success) {
                                                     </p>
                                                 </li> -->
                                                 <li id="li_19" class="section_break">
-                                                    <h3>聯絡資料 Contact Information</h3>
+                                                    <h3>@聯絡資料 Contact Information@</h3>
                                                     <p></p>
                                                 </li>
                                                 <li id="li_2">
-                                                    <label class="description" for="element_2">公司名稱 Company Name
+                                                    <label class="description" for="element_2">@公司名稱 Company Name@
                                                         <span id="required_2" class="required">*</span>
                                                     </label>
                                                     <div>
                                                         <input id="element_2" name="element_2" class="element text large" type="text" value="" />
                                                     </div>
                                                     <p class="guidelines" id="guide_2">
-                                                        <small>請填寫完整的公司名稱 Please enter your company name here.</small>
+                                                        <small>@請填寫完整的公司名稱 Please enter your company name here.@</small>
                                                     </p>
                                                 </li>
                                                 <li id="li_13">
-                                                    <label class="description" for="element_13">公司網站 Company Website </label>
+                                                    <label class="description" for="element_13">@公司網站 Company Website@ </label>
                                                     <div>
                                                         <input id="element_13" name="element_13" style="width:60%" class="element text large" type="text" value="http://" />
                                                     </div>
                                                     <p class="guidelines" id="guide_13">
-                                                        <small>請輸入貴公司的網站URL Provide your company web site if you got one.</small>
+                                                        <small>@請輸入貴公司的網站URL Provide your company web site if you got one.@</small>
                                                     </p>
                                                 </li>
 
                                                 <li id="li_18">
-                                                    <label class="description" for="element_18">國家 Country
+                                                    <label class="description" for="element_18">@國家 Country@
                                                         <span id="required_18" class="required"> *</span>
                                                     </label>
                                                     <div>
@@ -963,34 +963,34 @@ if ($response != null && $response->success) {
                                                         </select>
                                                     </div>
                                                     <p class="guidelines" id="guide_18">
-                                                        <small>請選擇您的國家 (預設為台灣) Please select your company location here.</small>
+                                                        <small>@請選擇您的國家 (預設為台灣) Please select your company location here.@</small>
                                                     </p>
                                                 </li>
 
                                                 <li id="li_11">
-                                                    <label class="description" for="element_11">商業型態 Business Type
+                                                    <label class="description" for="element_11">@商業型態 Business Type@
                                                         <span id="required_11" class="required">*</span>
                                                     </label>
                                                     <div>
                                                         <select class="element select medium" id="element_11" name="element_11">
                                                             <option value="" selected="selected"></option>
-                                                            <option value="進出口商">進出口商 Importer / Exporter</option>
-                                                            <option value="經銷商">經銷商 Distributor / Wholesaler</option>
-                                                            <option value="貿易商">貿易商 Trading Company</option>
-                                                            <option value="代理商">代理商 Agents</option>
-                                                            <option value="採購商">採購商 Buying Offices</option>
-                                                            <option value="製造商">製造商 Manufacturers</option>
-                                                            <option value="零售商">零售商 Retailer</option>
-                                                            <option value="服務商">服務商 Repair / Service Center</option>
+                                                            <option value="進出口商">@進出口商 Importer / Exporter@</option>
+                                                            <option value="經銷商">@經銷商 Distributor / Wholesaler@</option>
+                                                            <option value="貿易商">@貿易商 Trading Company@</option>
+                                                            <option value="代理商">@代理商 Agents@</option>
+                                                            <option value="採購商">@採購商 Buying Offices@</option>
+                                                            <option value="製造商">@製造商 Manufacturers@</option>
+                                                            <option value="零售商">@零售商 Retailer@</option>
+                                                            <option value="服務商">@服務商 Repair / Service Center@</option>
 
                                                         </select>
                                                     </div>
                                                     <p class="guidelines" id="guide_11">
-                                                        <small>請選擇您的商業型態 Please select what business type you are.</small>
+                                                        <small>@請選擇您的商業型態 Please select what business type you are.@</small>
                                                     </p>
                                                 </li>
                                                 <li id="li_1">
-                                                    <label class="description">聯絡人 Contact Name
+                                                    <label class="description">@聯絡人 Contact Name@
                                                         <span id="required_1" class="required">*</span>
                                                     </label>
                                                     <br>
@@ -1003,11 +1003,11 @@ if ($response != null && $response->success) {
                                                         />
                                                     </span>
                                                     <p class="guidelines" id="guide_1">
-                                                        <small>請留下您的大名 Please enter contact person's name here.</small>
+                                                        <small>@請留下您的大名 Please enter contact person's name here.@</small>
                                                     </p>
                                                 </li>
                                                 <li id="li_3">
-                                                    <label class="description" for="element_3">電子郵件 E-mail
+                                                    <label class="description" for="element_3">@電子郵件 E-mail@
                                                         <span id="required_3" class="required">*</span>
                                                     </label>
                                                     <div>
@@ -1015,36 +1015,36 @@ if ($response != null && $response->success) {
                                                         />
                                                     </div>
                                                     <p class="guidelines" id="guide_3">
-                                                        <small>請留下您的電子郵件信箱 Please enter valid email address here.</small>
+                                                        <small>@請留下您的電子郵件信箱 Please enter valid email address here.@</small>
                                                     </p>
                                                 </li>
                                                 <li id="li_4">
-                                                    <label class="description">電話 TEL
+                                                    <label class="description">@電話 TEL@
                                                         <span id="required_4" class="required">*</span>
                                                     </label>
                                                     <div>
                                                         <input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value="" />
                                                     </div>
                                                     <p class="guidelines" id="guide_4">
-                                                        <small>請留下您的聯絡電話或行動電話 Please enter correct phone number here.</small>
+                                                        <small>@請留下您的聯絡電話或行動電話 Please enter correct phone number here.@</small>
                                                     </p>
                                                 </li>
                                                 <li id="li_14">
-                                                    <label class="description">傳真 FAX </label>
+                                                    <label class="description">@傳真 FAX@ </label>
                                                     <div>
                                                         <input id="element_14" name="element_14" class="element text medium" type="text" maxlength="255" value="" />
                                                     </div>
                                                     <p class="guidelines" id="guide_14">
-                                                        <small>如可以，請留下您的傳真號碼 Please enter correct Fax number here.</small>
+                                                        <small>@如可以，請留下您的傳真號碼 Please enter correct Fax number here.@</small>
                                                     </p>
                                                 </li>
                                                 <li id="li_15">
-                                                    <label class="description" for="element_15">地址 Address </label>
+                                                    <label class="description" for="element_15">@地址 Address </label>
                                                     <div>
                                                         <input id="element_15" name="element_15" class="element text large" type="text" value="" />
                                                     </div>
                                                     <p class="guidelines" id="guide_15">
-                                                        <small>如可以，請留下您的聯絡地址 Please enter correct post address here.</small>
+                                                        <small>@如可以，請留下您的聯絡地址 Please enter correct post address here.@</small>
                                                     </p>
                                                 </li>
                                                 <!-- google驗證開始 -->
@@ -1073,49 +1073,49 @@ if ($response != null && $response->success) {
                                             msg = "";
                                             // 標題
                                             if (document.forms[0].element_17.value == "") {
-                                                msg = "請填寫\"標題\"欄位";
+                                                msg = "@請填寫\"標題\"欄位@";
                                             }
                                             // 需求
                                             else if (document.forms[0].element_12.value == "") {
-                                                msg = "請填寫\"需求描述\"欄位";
+                                                msg = "@請填寫\"需求描述\"欄位@";
                                             }
                                             // 公司名稱
                                             else if (document.forms[0].element_2.value == "") {
-                                                msg = "請填寫\"公司名稱\"欄位";
+                                                msg = "@請填寫\"公司名稱\"欄位@";
                                             }
                                             // 商業型態
                                             else if (document.forms[0].element_11.value == "") {
-                                                msg = "請選擇\"商業型態\"欄位";
+                                                msg = "@請選擇\"商業型態\"欄位@";
                                             }
                                             // 國家
                                             else if (document.forms[0].element_18.value == "") {
-                                                msg = "請選擇\"國家\"欄位";
+                                                msg = "@請選擇\"國家\"欄位@";
                                             }
                                             // 聯絡人姓名
                                             else if (document.forms[0].element_1_1.value == "") {
-                                                msg = "請填寫\"姓名\"欄位";
+                                                msg = "@請填寫\"姓名\"欄位@";
                                             }
                                             else if (document.forms[0].element_1_2.value == "") {
-                                                msg = "請填寫\"姓名\"欄位";
+                                                msg = "@請填寫\"姓名\"欄位@";
                                             }
 
                                             // email驗證
                                             else if (document.forms[0].element_3.value == "") {
-                                                msg = "請填寫\"信箱\"欄位";
+                                                msg = "@請填寫\"信箱\"欄位@";
                                             }
                                             else if (document.forms[0].element_3.value.indexOf("@") < 1) {
-                                                msg = "請確認\"信箱\"欄位格式正確";
+                                                msg = "@請確認\"信箱\"欄位格式正確@";
                                             }
                                             // 電話
                                             else if (document.forms[0].element_4.value == "") {
-                                                msg = "請填寫\"電話\"欄位";
+                                                msg = "@請填寫\"電話\"欄位@";
                                             }
                                             // 驗證
                                             else if (grecaptcha.getResponse() == "") {
-                                                msg = "請勾選\"驗證\"欄位";
+                                                msg = "@請勾選\"驗證\"欄位@";
                                             }
                                             else {
-                                                alert("表單已送出，稍後將由專員連繫您。");
+                                                alert("@表單已送出，稍後將由專員連繫您。@");
                                                 return true;
                                             }
                                             alert(msg);

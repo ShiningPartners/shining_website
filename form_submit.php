@@ -1,6 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
 // google驗證
 require_once "recaptchalib.php";
@@ -44,84 +44,80 @@ $sql =
 
 $res = mysqli_query($link, $sql);
 
-// PHPMailer開始
-// 請將這支程式連同上方三支程式放在同一個資料匣下才可以
-include "PHPMailer-5.2.26/PHPMailerAutoload.php";
 
-// 產生 Mailer 實體
-$mail = new PHPMailer();
 
-// 讓phpmailer 不要自動使用SSL連線(適用於PHP 5.6以上，非5.6可不用這段)
-$mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true,
-    ),
-);
+require_once('./PHPMailer-5.2.26/PHPMailerAutoload.php');    
+	$mail= new PHPMailer();                         //建立新物件    
+	#$mail->SMTPDebug = SMTP::DEBUG_SERVER;    
+	#$mail->SMTPDebug = 3;    
+	$mail->IsSMTP();                                //設定使用SMTP方式寄信    
+	$mail->SMTPAuth = 'true';                         //設定SMTP需要驗證    
+	#$mail->SMTPOptions = array(        
+	#'ssl' => array(            
+#'verify_peer' => false,            
+#'verify_peer_name' => false,            
+#'allow_self_signed' => true        
+#		)    
+#	);    
 
-// 設定為 SMTP 方式寄信
-$mail->IsSMTP();
+	$mail->SMTPSecure = 'true';                      // SMTP主機需要使用SSL連線    
+	$mail->Host = 'localhost';                      //SMTP主機    
+	$mail->Port = 25;                              //SMTP主機的埠號(Gmail為465)。    
+	$mail->CharSet = 'utf-8';                       //郵件編碼    
+	$mail->Username = 'sales_10@shining.com.tw';   //帳號    
+	$mail->Password = 'rh6sNjcSmjva';                  //密碼    
+	$mail->From = 'sales_10@shining.com.tw';       //寄件者信箱    
+	$mail->FromName = "來自shining_form，寄件者:" . $contact_firstname . $contact_lastname;                       //寄件者姓名    
+	$mail->Subject = "信件標題:" . $subject;;                         //郵件標題  
+	
+	
+	
+	
+	$message = '<html><body>';
+    $message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
+    // 信件標題
+    $message .= "<tr style='background: #eee;'><td><strong>信件標題 </strong> </td><td> $subject </td></tr>";
+    // 信件內容
+    $message .= "<tr><td><strong>信件內容 </strong> </td><td> $requirements </td></tr>";
+    // 公司名稱
+    $message .= "<tr><td><strong>公司名稱 </strong> </td><td> $company_name </td></tr>";
+    // 公司網站
+    $message .= "<tr><td><strong>公司網站 </strong> </td><td> $company_website </td></tr>";
+    // 國家
+    $message .= "<tr><td><strong>國家 </strong> </td><td> $country </td></tr>";
+    // 商業型態
+    $message .= "<tr><td><strong>商業型態 </strong> </td><td> $business_type </td></tr>";
+    // 聯絡人姓名
+    $message .= "<tr><td><strong>聯絡人姓名 </strong> </td><td> $contact_firstname $contact_lastname </td></tr>";
+    // 信箱
+    $message .= "<tr><td><strong>信箱 </strong> </td><td> $contact_mail </td></tr>";
+    // 電話
+    $message .= "<tr><td><strong>電話 </strong> </td><td> $contact_tel </td></tr>";
+    // 傳真
+    $message .= "<tr><td><strong>傳真 </strong> </td><td> $contact_fax </td></tr>";
+    // 地址
+    $message .= "<tr><td><strong>地址 </strong> </td><td> $contact_address </td></tr>";
+    
+    $message .= "</table>";
+    $message .= "</body></html>";
+	$mail->Body = $message;                         //郵件內容    
+	$mail->IsHTML(true);                            //郵件內容為html    
+	$mail->AddAddress('marketing@60947.com');          //收件者郵件及名稱
+	// $mail->AddCC('shining.image1978@gmail.com');   //副本收件者郵件及名稱
+	// $mail->AddCC('ahao19960512@gmail.com');        //副本收件者郵件及名稱
+	// $mail->AddCC('marketing@shining.com.tw');      //副本收件者郵件及名稱
 
-// SMTP 伺服器的設定，以及驗證資訊
-$mail->SMTPAuth = true;
-$mail->Host = "mail.XXX.com"; //此處請填寫您的郵件伺服器位置,通常是mail.網址。如果您MX指到外地，那這邊填入www.XXX.com 即可
-$mail->Port = 25; //主機的郵件伺服器port為 25
+    
+   
 
-// 信件內容的編碼方式
-$mail->CharSet = "utf-8";
 
-// 信件處理的編碼方式
-$mail->Encoding = "base64";
+// if(!$mail->Send())
+// {
+//    echo "Error sending: " . $mail->ErrorInfo;
+// }
+// else
+// {
+//    echo "E-mail sent";
 
-// SMTP 驗證的使用者資訊
-$mail->Username = "admin@shining.com.tw"; // 此處為驗証電子郵件帳號,就是您在ServerZoo主機上新增的電子郵件帳號，＠後面請務必一定要打。
-$mail->Password = "UdqutXvf2guTOJl29Z"; //此處為上方電子郵件帳號的密碼 (一定要正確不然會無法寄出)
+// }
 
-$message = '<html><body>';
-$message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
-// 信件標題
-$message .= "<tr style='background: #eee;'><td><strong>信件標題 </strong> </td><td> $subject </td></tr>";
-// 信件內容
-$message .= "<tr><td><strong>信件內容 </strong> </td><td> $requirements </td></tr>";
-// 公司名稱
-$message .= "<tr><td><strong>公司名稱 </strong> </td><td> $company_name </td></tr>";
-// 公司網站
-$message .= "<tr><td><strong>公司網站 </strong> </td><td> $company_website </td></tr>";
-// 國家
-$message .= "<tr><td><strong>國家 </strong> </td><td> $country </td></tr>";
-// 商業型態
-$message .= "<tr><td><strong>商業型態 </strong> </td><td> $business_type </td></tr>";
-// 聯絡人姓名
-$message .= "<tr><td><strong>聯絡人姓名 </strong> </td><td> $contact_firstname $contact_lastname </td></tr>";
-// 信箱
-$message .= "<tr><td><strong>信箱 </strong> </td><td> $contact_mail </td></tr>";
-// 電話
-$message .= "<tr><td><strong>電話 </strong> </td><td> $contact_tel </td></tr>";
-// 傳真
-$message .= "<tr><td><strong>傳真 </strong> </td><td> $contact_fax </td></tr>";
-// 地址
-$message .= "<tr><td><strong>地址 </strong> </td><td> $contact_address </td></tr>";
-
-$message .= "</table>";
-$message .= "</body></html>";
-
-// 信件內容設定
-$mail->From = "admin@shining.com.tw"; //此處為寄出後收件者顯示寄件者的電子郵件 (請設成與上方驗証電子郵件一樣的位址)
-$mail->FromName = "來自shining_form，寄件者:" . $contact_firstname . $contact_lastname; //此處為寄出後收件者顯示寄件者的名稱
-$mail->Subject = "信件標題:" . $subject; //此處為寄出後收件者顯示寄件者的電子郵件標題
-$mail->Body = $message;
-
-$mail->IsHTML(true);
-
-// 收件人
-$mail->AddAddress("ahao19960512@gmail.com", "Shining聯絡表單系統通知信"); //此處為收件者的電子信箱及顯示名稱
-
-// 顯示訊息
-if (!$mail->Send()) {
-    echo "Mail error: " . $mail->ErrorInfo;
-} else {
-    echo "Mail sent";
-}
-
-// header('Location: http://www.ahao850512.com/shining/contact%20page.php');
